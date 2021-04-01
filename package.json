@@ -1,0 +1,19 @@
+{
+  "name": "flsun.community",
+  "version": "0.0.1",
+  "description": "Community page for FLSUN 3D Printer owners",
+  "main": "index.js",
+  "authors": {
+    "name": "Galicz Miklós",
+    "email": "gnick666@gmail.com"
+  },
+  "repository": "/flsun.community",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
