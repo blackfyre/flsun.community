@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: /hero.png
 tagline: Community page for FLSUN 3D Printer owners
 actionText: Quick Start →
 actionLink: /guide/
@@ -11,5 +11,7 @@ features:
   details: A whole new world can open up! Speed, quiet, multiple colors, ... you name it!
 - title: Social Media groups
   details: Connect with others!
+- title: Firmwares
+  details: Firmwares, for your custom needs!
 footer: Made by the FLSUN Community with ❤️
 ---
