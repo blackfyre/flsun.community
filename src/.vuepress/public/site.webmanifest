@@ -1,6 +1,7 @@
 {
     "name": "FLSUN Community HUB",
-    "short_name": "FLSUN Community HUB",
+    "short_name": "FCH",
+    "start_url": "https://flsun.community",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

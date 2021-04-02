@@ -10,7 +10,7 @@
   "repository": "/flsun.community",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src --dest=dist"
   },
   "license": "MIT",
   "devDependencies": {

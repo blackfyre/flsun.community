@@ -21,7 +21,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -37,8 +37,10 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    repo: 'blackfyre/flsun.community',
+    editLinks: true,
+    repoLabel: 'Contribute!',
+    editLinkText: 'Help us improve this page!',
     docsDir: '',
     editLinkText: '',
     lastUpdated: true,
@@ -48,9 +50,21 @@ module.exports = {
       { text: 'Firmware', link: '/firmware/' },
     ],
     sidebar: {
+      '/firmware/': [
+        {
+          title: 'Firmware',
+          collapsable: false
+        }
+      ],
       '/guide/': [
         {
           title: 'Guide',
+          collapsable: false
+        }
+      ],
+      '/social-media/': [
+        {
+          title: 'Social Media',
           collapsable: false
         }
       ],
