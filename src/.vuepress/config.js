@@ -41,6 +41,7 @@ module.exports = {
     editLinks: true,
     repoLabel: 'Contribute!',
     editLinkText: 'Help us improve this page!',
+    logo: '/logo.png',
     docsDir: '',
     editLinkText: '',
     lastUpdated: true,

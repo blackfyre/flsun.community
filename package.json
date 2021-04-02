@@ -10,6 +10,7 @@
   "repository": "/flsun.community",
   "scripts": {
     "dev": "vuepress dev src",
+    "eject": "vuepress eject",
     "build": "vuepress build src --dest=dist"
   },
   "license": "MIT",

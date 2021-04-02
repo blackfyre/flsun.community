@@ -132,44 +132,40 @@ with the other end. CA glue works, but doesn't give enough time to align.
 - Measure the rods and enter the hole-to-hole length into config file
 ("delta diagonal rod" length). The stock length is 280.0 mm (QQ/QQ-S).
 - This jig can assist with rod repairs: <https://www.thingiverse.com/thing:3108080>
-Filament sensor:
 
-- Yes, the firmware already supports it (definitely for QQ-S; not sure about QQ).
-- You can find designs on thingiverse.com or buy a premade module online
-- How to install:
-You should use the normally-open side of the switch
-(switch should close when filament runs out).
-In either case, be sure you do NOT SHORT Gnd and 5V pins together!!!
-QQ-S: Attach to MT-DET connector between S & G pins (see board labels). V is 5V.
-QQ: Attach to ServoS2 connector between D4 and Gnd (2 outer pins; middle is 5V).
-QQ, alternate: Attach to TFT28 board, as shown:![](https://lh3.googleusercontent.com/mo6OS4di6BuBIZMEuzF7RkiM6sTSxZtixVAOMHfbDff4_zJrtMpMgvMPuC5yhFhyLHyDxZIyKAIqVleeAxEguN3PnpG6BrctYbq-dX0rcOYWAsh8RHKhFoveK-16c2bW9HxoDecY)
-(Figure from the TFT28 Datasheet; see link
-In the "More Details" section further down.)
-Fans stay on, are noisy:
+## Filament sensor:
+
+ - Yes, the firmware already supports it (definitely for QQ-S; not sure about QQ).
+ - You can find designs on thingiverse.com or buy a premade module online
+ - How to install:
+   - You should use the normally-open side of the switch (switch should close when filament runs out).
+     In either case, be sure you do NOT SHORT Gnd and 5V pins together!!!
+     - QQ-S: Attach to MT-DET connector between S & G pins (see board labels). V is 5V.
+     - QQ: Attach to ServoS2 connector between D4 and Gnd (2 outer pins; middle is 5V).
+     - QQ, alternate: Attach to TFT28 board, as shown:![](https://lh3.googleusercontent.com/mo6OS4di6BuBIZMEuzF7RkiM6sTSxZtixVAOMHfbDff4_zJrtMpMgvMPuC5yhFhyLHyDxZIyKAIqVleeAxEguN3PnpG6BrctYbq-dX0rcOYWAsh8RHKhFoveK-16c2bW9HxoDecY) (Figure from the TFT28 Datasheet; see link In the "More Details" section further down.)
+
+## Fans stay on, are noisy:
 
 - Add an inline power switch: search "iec cord switch"
 - Add thermoswitches (KSD9700, 45C, N.O.)
 - one for power supply fan (mount it in the donut)
 - one for chassis fan (mount it next to motor driver heatsinks)
 - The fans are 60x60x15, 12V (QQ) or 24V (QQ-S) (except for power supply fan: 12V)
-- If you really want to use Noctua fans for QQ-S, use a 24->12V buck-converter
-(a single converter can supply power for multiple fans, since adjustable fans
-work by switching the ground connection on and off)
-Belts:
+- If you really want to use Noctua fans for QQ-S, use a 24->12V buck-converter (a single converter can supply power for multiple fans, since adjustable fans work by switching the ground connection on and off)
 
-
-- How to tighten?
+## Belts:
+### How to tighten?
 They are tightened by turning the thumb nuts at the top of the printer.
-- How much to tighten?
+### How much to tighten?
 They should be tight enough that there is some tension to keep the two sides of
 the belt from touching each other in the middle with light finger pressure.
 They should NOT be tight as guitar strings! This causes belt damage!
-- How to tighten if the nuts are already bottomed out?
+### How to tighten if the nuts are already bottomed out?
 In this case, you need to shorten the belts by a couple of teeth.
 See below on replacing.
-- What are the belts? How long are they?
+### What are the belts? How long are they?
 They are 6mm GT2 belts, and each is approximately 148 cm.
-- How to replace the belts?
+### How to replace the belts?
 First, loosen the nuts at the top. Then remove the metal side covers.
 On the carriage, remove the 4 screws on the back to remove the back cover plate.
 The ends of the belt can then slide out from the holder.
@@ -179,31 +175,35 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 - If they are bent, you can straighten them out using brute force.
 - You should consider adding motor blocks to prevent the mounts from tilting.
 See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
-Should I add TL smoothers?
+
+## Should I add TL smoothers?
 
 - Not necessary, but folks say they do make prints smoother.
 - They just plug inline between the main board and the motors.
 - Use double-stick foam tape to secure them in the base.
 - On Robin Mini, you can also try shorting across the resistors marked Rm6 (4 of them).
-This forces mixed decay mode in the drivers and should result in smoother stepping.
-This is not recommended to try as the risk of damaging the board is very high.
-The printer screen comes on when plugged into USB:
+  - This forces mixed decay mode in the drivers and should result in smoother stepping.
+  - This is not recommended to try as the risk of damaging the board is very high.
+
+## The printer screen comes on when plugged into USB:
 
 - This is annoying. In order to fix, you need to remove a part from the main board:
 - remove D10 or F4 on MKS Gen L board (QQ)
 - remove D5 or F4 on Robin Mini board (QQ-S)
 - You could also modify a USB cable and cut the 5V power line.
-Making the print stick:
+
+## Making the print stick:
 - Be sure to both autolevel and set the Z0 offset (ie, get first layer height right).
 - Set the right temperatures for nozzle and bed.
 - Use hairspray or glue stick if needed.
 - Enable raft setting in slicer if needed.
 - Large area prints will want to warp unless the printer environment is warm.
-(also try to avoid any breezes)
-Under-extrusion, or extruder is clicking without pushing filament:
+- (also try to avoid any breezes)
+
+## Under-extrusion, or extruder is clicking without pushing filament:
 
 - Confirm that the bowden tube is tight against the nozzle with no gaps.
-Consider the Luke Hatfield fix; see <https://www.youtube.com/watch?v=7tCxO17XZtw>
+- Consider the Luke Hatfield fix; see <https://www.youtube.com/watch?v=7tCxO17XZtw>
 - Confirm that the hot-end nozzle is firm against the throat (not the block).
 - Confirm that the hot-end heatsink is being properly cooled.
 - Check the extruder gear spring tension (counter-clockwise to tighten on QQ-S/Q5).
@@ -213,87 +213,85 @@ Consider the Luke Hatfield fix; see <https://www.youtube.com/watch?v=7tCxO17XZtw
 - Calibrate your extruder (see below).
 - Make sure your hot-end temperature is appropriate for the filament you're using.
 - Make sure your print speed isn't too fast for the filament/nozzle you're using
-(use a lower speed for the first layer).
-Replacement extruders (the filament pusher) (mostly for the QQ):
+- (use a lower speed for the first layer).
+
+## Replacement extruders (the filament pusher) (mostly for the QQ):
 
 - The cheap aluminum one works fine.
 - So does the Titan (clone).
 - Many folks like the Bondtech dual-drive gear extruder.
 - How to calibrate extruder?
 See instructions in Appendix 1 below.
-Alternate extruder mounting:
+
+## Alternate extruder mounting:
 
 - Why? It provides better filament control, needing less retraction.
 - mid-mounted extruder: print a bracket <https://www.thingiverse.com/thing:3368268>
 This allows the bowden tube to be not-quite half as long.
 - flying extruder: Use a bracket like the one in the files section
-This allows the bowden tube to be less than 12" (30cm) long.
-You'll also need 3 paper clips and 3 large rubber bands (or similar material).
-The paper clips can be installed under the screws at the top of the carriages to
-hold one end of the rubber bands, with the other end going to the extruder bracket.
-See <https://www.facebook.com/groups/120961628750040/permalink/434002980779235>
-What is the stock Hot End?
+  - This allows the bowden tube to be less than 12" (30cm) long.
+  - You'll also need 3 paper clips and 3 large rubber bands (or similar material).
+  - The paper clips can be installed under the screws at the top of the carriages to hold one end of the rubber bands, with the other end going to the extruder bracket. See <https://www.facebook.com/groups/120961628750040/permalink/434002980779235>
+
+## What is the stock Hot End?
 
 - QQ/QQ-S: It's a combination of: XCR BP6 block, mk8 nozzle, V6-clone heatsink & throat
 - Can I upgrade to e3d v6? Sure! Many people have.
 - Q5, and late-model QQ-S Pros: It's totally different; like Ender 3 (tbd)
-The fan ducts don't point at the nozzle tip:
+
+## The fan ducts don't point at the nozzle tip:
 
 - Print new ones from the Files section.
 - There's also a version for the E3D V6 that is slightly shorter.
-Wifi:
+
+## Wifi:
 
 - Ways to set up: see documents in the Files section. The app is not necessary.
 - Or use a RaspberryPi with Octoprint instead. It's better.
 - Later printers don't seem to include the wifi module.
-Maximum print speed?
+
+## Maximum print speed?
 
 - Depends on many variables, but mostly the material and the model.
 - Folks have printed at up to 130mm/sec.
-What about an enclosure?
+
+## What about an enclosure?
 
 - When printing at the edge of the bed, the effector sticks out past the frame.
 - So if you put flat sides on you'll limit the print area.
-- You can use a design that provides a top and bottom for a piece of stiff but
-flexible material (there are several on Thingiverse).
-Slicers, settings:
+- You can use a design that provides a top and bottom for a piece of stiff but flexible material (there are several on Thingiverse).
+
+## Slicers, settings:
 
 - You should probably download the current version instead of using the provided one.
-- Cura (open source; available for PC, Mac, and Linux)
-
-------------------------------------------------------
-<https://ultimaker.com/software/ultimaker-cura>
+- Cura (open source; available for PC, Mac, and Linux) <https://ultimaker.com/software/ultimaker-cura>
 - Some versions had very slow z movement; there's a fix for that:
-Set the maximum Z speed in the settings to a reasonable value.
-- Slic3r or Prusa Slicer (open source; for PC, Mac, and Linux)
-
---------------------------------------------------------------
-<https://slic3r.org> <https://www.prusa3d.com/prusaslicer/>
+  - Set the maximum Z speed in the settings to a reasonable value.
+- Slic3r or Prusa Slicer (open source; for PC, Mac, and Linux) <https://slic3r.org> <https://www.prusa3d.com/prusaslicer/>
 - Some settings can be found in the files section
-- Simplify 3D (commercial; available for PC, Mac, and Linux)
-
-------------------------------------------------------------
-<https://www.simplify3d.com>
+- Simplify 3D (commercial; available for PC, Mac, and Linux) <https://www.simplify3d.com>
 - Some settings can be found in the files section
-Other software:
+
+## Other software:
 
 - Repetier Host
-- Use for printing from a computer or sending G-code. Includes slicers.
-<https://www.repetier.com/download-now/>
+- Use for printing from a computer or sending G-code. Includes slicers. <https://www.repetier.com/download-now/>
 - Pronterface (PrintRun)
-- Use for testing the printer and sending G-code.
-<http://www.pronterface.com/#download>
+- Use for testing the printer and sending G-code. <http://www.pronterface.com/#download>
 - Octoprint (on RPi)
-- Enables easy wifi printing, time lapses, other features.
-<https://octoprint.org/>
-Details about the boards:
+- Enables easy wifi printing, time lapses, other features. <https://octoprint.org/>
+
+## Details about the boards:
 - MKS Robin Mini board: <https://github.com/makerbase-mks/MKS-Robin-mini>
 - MKS Robin Nano board: <https://github.com/makerbase-mks/MKS-Robin-Nano>
 - MKS Gen L board: <https://github.com/makerbase-mks/MKS-GEN_L>
 - MKS TFT28 board: <https://github.com/makerbase-mks/MKS-TFT>
 - The HiSpeed board is a custom version of the Robin Mini board.
-There are two versions: one with soldered motor drivers, one with driver sockets.
-G-Code descriptions:
+  - There are two versions: 
+    - one with soldered motor drivers, 
+    - one with driver sockets.
+
+## G-Code descriptions:
 
 - <https://reprap.org/wiki/G-code> (best one: describes all types incl. Repetier)
 - <http://marlinfw.org/meta/gcode/> (Marlin only)
@@ -303,10 +301,11 @@ More details about TFT28, including button customization:
 MKS%20TFT28%2032%20DataSheet.pdf](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
 - IMG2LCD software: <https://github.com/makerbase-mks/Software/tree/master/Image2LCD>
 (A similar procedure can be used to customize QQ-S/Q5 button appearance)
-Other problems:
+
+## Other problems:
 
 - Pulleys are loose on the motor shafts (one carriage doesn't move or doesn't always move right). Tighten them.
-- Nozzle is higher in the middle vs. the sides (or vice versa). You need to set the diagonal rod length accurately, then redo the auto-leveling. Diagonal rod length can be adjusted with the curvature buttons, or by sending the G-code M665 L<length in mm>. The diagonal rod length is the hole-center to hole-center distance for the diagonal rods. They all need to be the same length for accurate printing.
+- Nozzle is higher in the middle vs. the sides (or vice versa). You need to set the diagonal rod length accurately, then redo the auto-leveling. Diagonal rod length can be adjusted with the curvature buttons, or by sending the G-code `M665 L<length in mm>`. The diagonal rod length is the hole-center to hole-center distance for the diagonal rods. They all need to be the same length for accurate printing.
 - Print isn't sticking to the bed:
 - Make sure bed is clean
 - Make sure Z0 height is correct (nozzle isn't too high)
@@ -322,9 +321,9 @@ Other problems:
 - Different hot-end (slide-in throat vs. screw-in throat; different heatsink mount)
 - It doesn't auto-level right: it goes to the wrong height or digs into the bed.
 You may have the Z-probe offset set incorrectly. This is the height of the nozzle above the bed when the Z-probe makes contact.
-- For the leveling switch, set with G-code: M851 Z-16.2
-- For the leveling pad, set with G-code: M851 Z-1.05
-- Then save by using G-code: M500
+- For the leveling switch, set with G-code: `M851 Z-16.2`
+- For the leveling pad, set with G-code: `M851 Z-1.05`
+- Then save by using G-code: `M500`
 Also, if you've adjusted something that changes the height, reset the Z0 height.
 - There's a new, cost-reduced version of the QQ-S Pro being sold now:
 - Umbilical doesn't go to top, no metal inline plug/jack anymore
@@ -369,32 +368,31 @@ See: <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>
 - What else?
 
 Appendix 1: How to calibrate extruder E-steps on your 3D printer:
-1) Figure out how to send g-code commands to your printer.
-Use software such as:
-a) Pronterface b) Repetier Host c) many others (e.g. serial terminal programs)
-You can search: how to send g-code using [my printing software]
-Try baud rates of 250000 (QQ) or 115200 (QQ-S/Q5).
+1) Figure out how to send g-code commands to your printer. Use software such as:
+  - Pronterface 
+  - Repetier Host 
+  - many others (e.g. serial terminal programs)
+    You can search: how to send g-code using [my printing software]
+    Try baud rates of `250000` (QQ) or `115200` (QQ-S/Q5).
 2) Find out what your starting E-step value is, if you can.
-- For QQ, use g-code: M503
-Look at the M92 line, remember the number after "E" as the starting E-value
-(it's normally around 87 for the stock Flsun direct extruder).
-- For QQ-S/Q5, use g-code: M205
-Look for the number right before the label "Extr.1 steps per mm".
-(it's normally around 367 for the stock Titan-clone extruder).
-3) Only if M503 and M205 don't work and you're not sure of the value, then go ahead
+  - For QQ, use g-code: `M503`
+    - Look at the M92 line, remember the number after "E" as the starting E-value (it's normally around 87 for the stock Flsun direct extruder).
+  - For QQ-S/Q5, use g-code: `M205`
+Look for the number right before the label "Extr.1 steps per mm". (it's normally around 367 for the stock Titan-clone extruder).
+3) Only if `M503` and `M205` don't work and you're not sure of the value, then go ahead
 and set a known initial value for E-steps; otherwise, skip this step.
-Send g-code: M92 E99 (replace 99 with a different guess if you want)
+Send g-code: `M92 E99` (replace 99 with a different guess if you want)
 Use this guess as the starting E-step value for later.
 4) Go ahead and set the hot-end to a temperature that will melt the
 filament you are using.
-Use the GUI or send g-code: M104 S200 (replace 200 with desired temp)
+Use the GUI or send g-code: `M104 S200` (replace 200 with desired temp)
 5) Note where the filament enters the extruder drive, then measure and mark
 a point on the filament 70mm from where it goes in.
 6) Wait for the hot-end to reach extruding temperature.
 7) Tell the printer to extrude 50mm of filament, slowly.
 Use the GUI or send g-codes:
-M83 (do once to set extruder to relative mode)
-G1 E50 F200 (extrude 50mm at 200mm/minute, which should take 15 seconds)
+   1) `M83` (do once to set extruder to relative mode)
+   2) `G1 E50 F200` (extrude 50mm at 200mm/minute, which should take 15 seconds)
 8) Measure the distance between the mark and where the filament goes in.
 With this measurement, we can calculate exactly how much filament was extruded.
 Calculate: extruded_amount = 70 - measurement
@@ -406,7 +404,7 @@ M92 Exxx.x (you MUST replace xxx.x with your calculated new_e_steps)
 M500 (saves the value to non-volatile memory)
 11) You can repeat steps 5-8 to verify the new value.
 12) Turn off the hot-end:
-Use the GUI or send g-code: M104 S0
+Use the GUI or send g-code: `M104 S0`
 If the mark disappears inside the extruder drive at step 7, then you need to measure further out than 70mm. This shouldn't be necessary unless your initial guess is way off. You could also change your initial guess and go back to step 3.
 
 Appendix 2: How to set the correct Z=0 height on the QQ or QQ-S:
@@ -417,36 +415,37 @@ Steps:
 Try baud rates of 250000 (QQ) or 115200 (QQ-S/Q5).
 0) Pick a height value about 5mm less than the maximum Z height of the nozzle.
 Here, we chose 365mm since the QQ's maximum Z height is around 370mm (Q5: 200mm)
-1) Send G-code: M665 H365 [Set height value to 365mm, the height chosen above]
-2) Send G-code: G28 [Home the printer]
-3) Send G-code: G1 Z0 F3000 [Go to Z=0, speed = 3000mm/min or 50mm/sec]
+1) Send G-code: `M665 H365` [Set height value to 365mm, the height chosen above]
+2) Send G-code: `G28` [Home the printer]
+3) Send G-code: `G1 Z0 F3000` [Go to Z=0, speed = 3000mm/min or 50mm/sec]
 4) Measure the space between the nozzle and the bed. It should be around 5mm.
 If you aren't sure of the precise value, err on the low side
 (ie, if you aren't sure if it's 5 or 6mm, choose 5).
 5) Calculate new H value = 365 + measured space
 6) Put a piece of paper on the printer bed.
-7) Send G-code: M665 H<value> [new H value]
-8) Send G-code: G28 [Home again, to sync with new value]
-9) Send G-code: G1 Z0 [Go to Z=0]
+7) Send G-code: `M665 H<value>` [new H value]
+8) Send G-code: `G28` [Home again, to sync with new value]
+9) Send G-code: `G1 Z0` [Go to Z=0]
 X) See if the paper moves easily, has slight friction, or is stuck tight,
 then choose:
 Paper moves easily:
 a) Increase H value by 0.1
 b) Go back to step 7
 Paper has slight friction:
-a) Send G-code: M500 [Save the new value]
+a) Send G-code: `M500` [Save the new value]
 b) You're done! Celebrate!
 Paper is stuck tight:
 a) Decrease H value by 0.1
 b) Go back to step 7
-__________________________________________________________________________
+
+
 If you just want to tweak your Z=0 setting, follow these steps:
 0) Set up and run Pronterface in order to send the bold G-codes below.
-1) Read the current delta height using M503 (for QQ) or M205 (for QQ-S/Q5).
-For the QQ, look in the output for the "M665" line's "H" number.
+1) Read the current delta height using `M503` (for QQ) or `M205` (for QQ-S/Q5).
+For the QQ, look in the output for the `M665` line's "H" number.
 For the QQ-S, look in the output for "Z Max Length".
-The H (height) value should be a number around 370 for the QQ/QQ-S (210 Q5).
-2) Home the printer with G28
+The H (height) value should be a number around `370` for the QQ/QQ-S (210 Q5).
+2) Home the printer with `G28`
 3) Put a piece of paper on the printer bed.
-4) Bring the nozzle to Z0 with G1 Z0 F3000
+4) Bring the nozzle to Z0 with `G1 Z0 F3000`
 5) Go to step (X) above.

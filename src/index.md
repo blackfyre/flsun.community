@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: /hero.png
+heroText: null
 tagline: Community page for FLSUN 3D Printer owners
 actionText: Quick Start →
 actionLink: /guide/
