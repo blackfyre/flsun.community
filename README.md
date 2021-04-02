@@ -1,6 +1,6 @@
 # flsun.community
 
-Source code for the [https://flsun.community](https://flsun.community) site.
+Source code for the [https://flsun.community](https://flsun.community) VuePress site.
 
 ## Getting it running locally
 

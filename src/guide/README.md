@@ -1,4 +1,4 @@
-# General
+# Quick Start Guide
 
 ## Group etiquette
 
@@ -48,30 +48,15 @@
 - Set Z0 height
 - Calibrate extruder (see Appendix 1)
 - Do a test print
-## Firmware:
+## Firmware
 - What's the latest firmware version?
-
-- QQ: 3.0.2.4
-- QQ-S: 2.5
-- Q5: 2.5
+    - QQ: 3.0.2.4
+    - QQ-S: 2.5
+    - Q5: 2.5
 
 ### Where do I get it?
 
-Look in the group's Files section. Click on Files, then click on "See More" until you see the relevant file (name varies depending on which version).
-When you download the file, make sure to change the suffix (remove ".txt").  
-Inside the 2.3 zip file, there are 6 different rar files:
-- QQ with leveling pad
-- QQ with leveling switch
-- QQ-S with leveling pad
-- QQ-S with leveling switch
-- QQ-S with leveling pad, different-looking icons ("new UI")
-- QQ-S with leveling switch, different-looking icons ("new UI")
-
-Extract the proper one for your configuration.
-
-> Note: the new UI version for QQ-S has mistakes in the "robin_mini_cfg.txt" file.
-
-If you choose this version, you should get the robin_mini_cfg.txt file from the other (2.3) version. (If you can't extract the rar files, install a program such as 7-Zip.)
+Check the [Firmware](/firmware/) section of the site! 
 
 ### How do I update my printer?
 You need a reliable SD card that is 32GB or smaller and FAT32 formatted.
