@@ -79,10 +79,23 @@ module.exports = {
     sidebarDepth: 2,
     nav: [
       {text: 'Forum', link: 'https://discourse.flsun.community'},
-      { text: "Social Media", link: "/social-media/" },
-      { text: "Firmware", link: "/firmware/" },
+      { text: "Social Media", link: "/guide/social-media/" },
+      { text: "Firmware", link: "/guide/firmware/" },
     ],
-    sidebar: 'auto'
+    sidebar: {
+      '/guide/': [
+        {
+          title: 'Guide',
+          collapsable: false,
+          children: [
+            '',
+            'calibration',
+            'firmware',
+            'social-media'
+          ]
+        }
+      ],
+    }
   },
 
   /**

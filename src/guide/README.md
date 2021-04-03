@@ -1,35 +1,5 @@
 # Quick Start Guide
 
-## Group etiquette
-
-- Use the group search feature to look for answers first.
-- Also look in the Files section of the group.
-- Tell if you have QQ or QQ-S or Q5.
-- Tell what software are you using, if relevant.
-- Tell what filament are you using, if relevant.
-- Always follow-up to your own post with the final solution you found.
-
-## Maximum print dimensions? (QQ/QQ-S)
-
-- 260 x 320/370 (cylinder+cone) - 210 x 180/210 (Q5)
-- It's a 260mm wide x 320mm tall cylinder, topped off with a 50mm tall "cone" (not a true cone, since the sides are defined by arcs, not straight lines)
-
-## QQ/QQ-S/QQ-S Pro differences
-
-- QQ has power switch on left vs QQ-S right (internals rearranged)
-- QQ has MKS Gen L 8-bit board vs QQ-S has MKS Robin Mini 32-bit board
-- QQ has MKS TFT28 LCD with its own CPU vs QQ-S has simple LCD (no CPU)
-- QQ has offboard mosfet module for bed vs QQ-S has onboard mosfet for bed
-- QQ has offboard full-size SD card reader vs QQ-S has onboard micro SD reader
-- QQ has 12V power supply, heaters vs QQ-S has 24V power supply, heaters
-- QQ has aluminum bed vs QQ-S has lattice glass bed
-
-## What's the QQ-S Pro?
-
-- It's a QQ-S that comes with the leveling switch instead of the leveling pad
-- QQ-S Pro has a "true" power switch by the cord jack, no switch on the front
-- Note that Flsun makes changes all the time, so there are units with mixed parts.
-
 ## How to contact Flsun
 
 - email: <service@flsund3d.com> (note the extra 'd') or Skype: search flsun
@@ -352,45 +322,6 @@ See Under-Extrusion section on page 5.
 See: <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>
 - What else?
 
-Appendix 1: How to calibrate extruder E-steps on your 3D printer:
-1) Figure out how to send g-code commands to your printer. Use software such as:
-  - Pronterface 
-  - Repetier Host 
-  - many others (e.g. serial terminal programs)
-    You can search: how to send g-code using [my printing software]
-    Try baud rates of `250000` (QQ) or `115200` (QQ-S/Q5).
-2) Find out what your starting E-step value is, if you can.
-  - For QQ, use g-code: `M503`
-    - Look at the M92 line, remember the number after "E" as the starting E-value (it's normally around 87 for the stock Flsun direct extruder).
-  - For QQ-S/Q5, use g-code: `M205`
-Look for the number right before the label "Extr.1 steps per mm". (it's normally around 367 for the stock Titan-clone extruder).
-3) Only if `M503` and `M205` don't work and you're not sure of the value, then go ahead
-and set a known initial value for E-steps; otherwise, skip this step.
-Send g-code: `M92 E99` (replace 99 with a different guess if you want)
-Use this guess as the starting E-step value for later.
-4) Go ahead and set the hot-end to a temperature that will melt the
-filament you are using.
-Use the GUI or send g-code: `M104 S200` (replace 200 with desired temp)
-5) Note where the filament enters the extruder drive, then measure and mark
-a point on the filament 70mm from where it goes in.
-6) Wait for the hot-end to reach extruding temperature.
-7) Tell the printer to extrude 50mm of filament, slowly.
-Use the GUI or send g-codes:
-   1) `M83` (do once to set extruder to relative mode)
-   2) `G1 E50 F200` (extrude 50mm at 200mm/minute, which should take 15 seconds)
-8) Measure the distance between the mark and where the filament goes in.
-With this measurement, we can calculate exactly how much filament was extruded.
-Calculate: extruded_amount = 70 - measurement
-9) Now, based on that amount, calculate the correct E-step value:
-new_e_steps = starting_e_step_value * 50 / extruded_amount
-(ie, multiply the starting value by 50, then divide by the extruded amount)
-10) Enter this new value by sending g-codes:
-M92 Exxx.x (you MUST replace xxx.x with your calculated new_e_steps)
-M500 (saves the value to non-volatile memory)
-11) You can repeat steps 5-8 to verify the new value.
-12) Turn off the hot-end:
-Use the GUI or send g-code: `M104 S0`
-If the mark disappears inside the extruder drive at step 7, then you need to measure further out than 70mm. This shouldn't be necessary unless your initial guess is way off. You could also change your initial guess and go back to step 3.
 
 Appendix 2: How to set the correct Z=0 height on the QQ or QQ-S:
 In the steps below, don't type the comment in []'s.
