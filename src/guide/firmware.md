@@ -27,7 +27,9 @@ If you choose this version, you should get the robin_mini_cfg.txt file from the 
 TBA
 ## Custom firmwares
 
+::: tip
 Instructions for the custom firmwares are provided by the repositories, respectively.
+:::
 
 ### DeltaFoxIes
 
