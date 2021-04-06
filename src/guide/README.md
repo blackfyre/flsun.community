@@ -18,52 +18,14 @@
 - Set Z0 height
 - Calibrate extruder (see Appendix 1)
 - Do a test print
-## Firmware
-- What's the latest firmware version?
-    - QQ: 3.0.2.4
-    - QQ-S: 2.5
-    - Q5: 2.5
 
-### Where do I get it?
-
-Check the [Firmware](/firmware/) section of the site! 
-
-### How do I update my printer?
-You need a reliable SD card that is 32GB or smaller and FAT32 formatted.
-Just extract the contents from the appropriate rar/zip file to the SD card root.
-- QQ: you should see (on card) 2 "mks" directories and 3 files starting with "mks".
-- QQ-S/Q5: you should see 2 "mks" directories and 2 files starting with "robin".
-- Turn the printer off, insert the SD card into the printer, and then turn it on.
-- The printer should show "Updating", after which it should start up normally.
-- After updating, you will need to auto-level and set the Z0 height again.
-
-### What's the deal with firmware?
-
-#### QQ: The QQ has 3 firmwares: Gen L board, TFT28 board, Wifi board
-Typically, the Gen L firmware is left alone and only the other two are updated.
-The Gen L board has a version of Marlin 1.x on it, modified by FLSun.
-#### QQ-S/Q5: It has 2 firmwares: Robin Mini (Q5:Nano) board, Wifi board (if equipped)
-The Robin Mini board runs a custom MKS/FLSun firmware based on Repetier.
-Since Repetier firmware is GPL licensed, FLSun is required under the license
-to publish their changes to the source code. They are in violation of the GPL
-since they have not done this. Please ask them to publish the QQ-S source code!
-###  What about "real" Marlin firmware?
-
-#### QQ: Search post "Rick Salvador Marlin" for 1.1.9 and/or
-find the 1.1.6 source in the Files Section.
-Note: You must unplug the LCD screen in order to update over USB.
-Or: Start with official Marlin, with the Delta/Flsun/Kossel configuration, then
-modify the delta size parameters for the QQ (see the QQ-S's configuration).
-#### QQ-S: There is a QQ-S config in the official Marlin source now.
-Go to <https://marlinfw.org> or <https://github.com/MarlinFirmware>
-(This is for folks who will build it themselves.)
-You can also find prebuilt versions in the group's files section.
-## QQ Extruder:
+## QQ Extruder
 - Print this piece before it breaks: <https://www.thingiverse.com/thing:2970718>
 - Too late, it broke already. What do I do?
 You can use a clamp to hold the broken piece in place while you print a
 replacement.
-## Autoleveling:
+
+## Autoleveling
 - leveling pad vs new leveling module (switch)
 - The leveling pad is a pain; you should use a leveling switch.
 - Where to get the switch module? Search: "flsun leveling module"
@@ -73,13 +35,13 @@ Z_PROBE_ON_HIGH to 1 in robin_mini_config.txt.)
 - How to install switch module? Search: "flsun leveling module", see videos
 - DIY switch: See <https://www.thingiverse.com/thing:3741924> or
 <https://www.thingiverse.com/thing:3457361>
-- manual leveling (QQ-S/Q5 only)
-Many folks say this is more accurate than autoleveling.
+- manual leveling (QQ-S/Q5 only)  
+Many folks say this is more accurate than autoleveling.  
 In any case, you must do an autolevel at least once before doing manual leveling.
-- You must also set Z0! Autolevel alone doesn't guarantee correct nozzle height!
-QQ-S: Use the menu button "Adjust Z0"
+- You must also set Z0! Autolevel alone doesn't guarantee correct nozzle height!  
+QQ-S: Use the menu button "Adjust Z0"  
 QQ: See [https://www.youtube.com/watch?v=8pePqGybytM ](https://www.youtube.com/watch?v=8pePqGybytM)or see Appendix 2.
-## Diagonal rods:
+## Diagonal rods
 - Several folks have seen the rods loosen or come out of the ball-joints.
 Reattach them using epoxy. Make sure the end is rotated and properly aligned
 with the other end. CA glue works, but doesn't give enough time to align.
@@ -88,7 +50,7 @@ with the other end. CA glue works, but doesn't give enough time to align.
 ("delta diagonal rod" length). The stock length is 280.0 mm (QQ/QQ-S).
 - This jig can assist with rod repairs: <https://www.thingiverse.com/thing:3108080>
 
-## Filament sensor:
+## Filament sensor
 
  - Yes, the firmware already supports it (definitely for QQ-S; not sure about QQ).
  - You can find designs on thingiverse.com or buy a premade module online
