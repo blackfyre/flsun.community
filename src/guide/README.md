@@ -1,5 +1,12 @@
 # Quick Start Guide
 
+## About
+
+:::tip Kudos
+This guide is based on the FAQ of the largest FLSUN facebook group, credit for compiling most of knowledge goes to the original authors of that document.  
+The rest of the credit goes to the repository contributors, which you can join any time!
+:::
+
 ## How to contact Flsun
 
 - email: <service@flsund3d.com> (note the extra 'd') or Skype: search flsun
@@ -74,7 +81,7 @@
 - The fans are 60x60x15, 12V (QQ) or 24V (QQ-S) (except for power supply fan: 12V)
 - If you really want to use Noctua fans for QQ-S, use a 24->12V buck-converter (a single converter can supply power for multiple fans, since adjustable fans work by switching the ground connection on and off)
 
-## Belts:
+## Belts
 
 ### How to tighten?
 
@@ -106,9 +113,9 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 - This can cause damage to the motor pulleys, belts, as well as printing problems.
 - If they are bent, you can straighten them out using brute force.
 - You should consider adding motor blocks to prevent the mounts from tilting.
-  See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
+  See <https://www.tinkercad.com/things/6hsckUHrPAz>
 
-## Making the print stick:
+## Making the print stick
 
 - Be sure to both autolevel and set the Z0 offset (ie, get first layer height right).
 - Set the right temperatures for nozzle and bed.
@@ -117,7 +124,7 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 - Large area prints will want to warp unless the printer environment is warm.
 - (also try to avoid any breezes)
 
-## Under-extrusion, or extruder is clicking without pushing filament:
+## Under-extrusion, or extruder is clicking without pushing filament
 
 - Confirm that the bowden tube is tight against the nozzle with no gaps.
 - Consider the Luke Hatfield fix; see <https://www.youtube.com/watch?v=7tCxO17XZtw>
@@ -136,15 +143,42 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 
 - QQ/QQ-S: It's a combination of: XCR BP6 block, mk8 nozzle, V6-clone heatsink & throat
 
-### Can I upgrade to e3d v6? Sure! Many people have.
+### Can I upgrade to E3D V6? Sure! Many people have.
 
 - Q5, and late-model QQ-S Pros: It's totally different; like Ender 3 (tbd)
 
-## Wifi:
+## Wifi
 
-- Ways to set up: see documents in the Files section. The app is not necessary.
+There are a couple of options here:
+
+- Setting up Repetier
 - Or use a RaspberryPi with Octoprint instead. It's better.
-- Later printers don't seem to include the wifi module.
+
+### Setting up repetier
+
+1.  Setup your QQ-S wifi as per this video
+2.  Log on to your wifi router and get the assigned IP address for your printer, then write it down
+3.  install Repetier Host from here https://www.repetier.com/download-now/
+4.  Start Repetier
+    1. Click on ‘Config’ then ‘Printer settings’ make sure you are on the connections tab
+    2. Change the IP address to the one you wrote down from your router
+    3. Make sure the port is 8080
+    4. Click on the printer tab
+    5. Click on check box for ‘Y axis’ invert direction so that it is ticked
+    6. Click on the ‘Extruder’ tab
+    7. Change extruder temp to 270, Bed temp to 120
+    8. Make sure that the extruder nozzle diameter and numbers of extruders is set correctly
+    9. Click on the ‘Printer shape’ tab
+    10. Change shape to Rostock
+    11. Change home z = 376, x = 0, y =0
+    12. Change radius to 130, and height to 376
+5.  Click on Apply, then OK
+6.  Click on connect.
+    If everything is connected and you have the correct Wifi data you should be able to see ‘Disconnect’ instead of ‘Connect’.
+    Click on the ‘Manual Control’ tab and you should be able to jog the Printer from the PC.
+7.  Have fun and enjoy!!
+
+_Courtesy of TK Ward_
 
 ## Maximum print speed?
 
