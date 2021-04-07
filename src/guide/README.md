@@ -69,8 +69,8 @@
 
 - Add an inline power switch: search "iec cord switch"
 - Add thermoswitches (KSD9700, 45C, N.O.)
-- one for power supply fan (mount it in the donut)
-- one for chassis fan (mount it next to motor driver heatsinks)
+  - one for power supply fan (mount it in the donut)
+  - one for chassis fan (mount it next to motor driver heatsinks)
 - The fans are 60x60x15, 12V (QQ) or 24V (QQ-S) (except for power supply fan: 12V)
 - If you really want to use Noctua fans for QQ-S, use a 24->12V buck-converter (a single converter can supply power for multiple fans, since adjustable fans work by switching the ground connection on and off)
 
@@ -108,23 +108,6 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 - You should consider adding motor blocks to prevent the mounts from tilting.
   See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
 
-## Should I add TL smoothers?
-
-- Not necessary, but folks say they do make prints smoother.
-- They just plug inline between the main board and the motors.
-- Use double-stick foam tape to secure them in the base.
-- Silent stepper divers are more worht wile [upgrade]().
-- On Robin Mini, you can also try shorting across the resistors marked Rm6 (4 of them).
-  - This forces mixed decay mode in the drivers and should result in smoother stepping.
-  - This is not recommended to try as the risk of damaging the board is very high.
-
-## The printer screen comes on when plugged into USB:
-
-- This is annoying. In order to fix, you need to remove a part from the main board:
-- remove D10 or F4 on MKS Gen L board (QQ)
-- remove D5 or F4 on Robin Mini board (QQ-S)
-- You could also modify a USB cable and cut the 5V power line.
-
 ## Making the print stick:
 
 - Be sure to both autolevel and set the Z0 offset (ie, get first layer height right).
@@ -144,39 +127,18 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 - Make sure the nozzle isn't too close to the bed (first layer only).
 - Check the nozzle itself for any blockage or deformity.
 - Confirm slicer settings (filament diameter).
-- Calibrate your extruder (see below).
+- [Calibrate your extruder](/guide/calibration.html#e-step-calibration).
 - Make sure your hot-end temperature is appropriate for the filament you're using.
 - Make sure your print speed isn't too fast for the filament/nozzle you're using
 - (use a lower speed for the first layer).
 
-## Replacement extruders (the filament pusher) (mostly for the QQ):
-
-- The cheap aluminum one works fine.
-- So does the Titan (clone).
-- Many folks like the Bondtech dual-drive gear extruder.
-- How to calibrate extruder?
-  See instructions in Appendix 1 below.
-
-## Alternate extruder mounting:
-
-- Why? It provides better filament control, needing less retraction.
-- mid-mounted extruder: print a bracket <https://www.thingiverse.com/thing:3368268>
-  This allows the bowden tube to be not-quite half as long.
-- flying extruder: Use a bracket like the one in the files section
-  - This allows the bowden tube to be less than 12" (30cm) long.
-  - You'll also need 3 paper clips and 3 large rubber bands (or similar material).
-  - The paper clips can be installed under the screws at the top of the carriages to hold one end of the rubber bands, with the other end going to the extruder bracket. See <https://www.facebook.com/groups/120961628750040/permalink/434002980779235>
-
 ## What is the stock Hot End?
 
 - QQ/QQ-S: It's a combination of: XCR BP6 block, mk8 nozzle, V6-clone heatsink & throat
-- Can I upgrade to e3d v6? Sure! Many people have.
+
+### Can I upgrade to e3d v6? Sure! Many people have.
+
 - Q5, and late-model QQ-S Pros: It's totally different; like Ender 3 (tbd)
-
-## The fan ducts don't point at the nozzle tip:
-
-- Print new ones from the Files section.
-- There's also a version for the E3D V6 that is slightly shorter.
 
 ## Wifi:
 

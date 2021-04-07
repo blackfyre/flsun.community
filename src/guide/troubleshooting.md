@@ -80,3 +80,19 @@ Hot-end/bed not heating as expected
 
 This is mostly a cosmetic issue. If adhesion is reduced, you can always use hairspray or glue to get it back. In fact, using hairspray or glue can act as a "buffer" to prevent a print from taking off any more of the black coating.
 If the appearance bothers you, one easy fix is to get a Buildtak, PEI sheet, or other print surface to cover the entire bed with.
+
+## The printer screen comes on when plugged into USB:
+
+- This is annoying. In order to fix, you need to remove a part from the main board:
+- remove D10 or F4 on MKS Gen L board (QQ)
+- remove D5 or F4 on Robin Mini board (QQ-S)
+- You could also modify a USB cable and cut the 5V power line.
+
+## The fan ducts don't point at the nozzle tip:
+
+You'll probably need another fan duct... 
+
+- QQ-S (Pro)
+  - take your pick at [Thingieverse](https://www.thingiverse.com/search?q=qq-s+fan+duct&type=things&sort=relevant)
+- Q5:
+  - take your pick at [Thingieverse](https://www.thingiverse.com/search?q=q5+fan+duct&type=things&sort=relevant)
