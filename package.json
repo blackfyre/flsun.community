@@ -11,7 +11,9 @@
   "scripts": {
     "dev": "vuepress dev src",
     "eject": "vuepress eject",
-    "build": "vuepress build src --dest=dist"
+    "build": "vuepress build src --dest=dist",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "license": "MIT",
   "devDependencies": {
