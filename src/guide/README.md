@@ -3,11 +3,12 @@
 ## How to contact Flsun
 
 - email: <service@flsund3d.com> (note the extra 'd') or Skype: search flsun
-- through reseller such as AliExpress or Amazon store 
-  -  <https://flsund3d.aliexpress.com/store/feedback-score/431393.html>
-  - <https://www.amazon.com/sp?marketplaceID=ATVPDKIKX0DER&seller=A8DKO6HP8H5CQ>
+- through reseller
+  - [AliExpress](https://flsund3d.aliexpress.com/store/feedback-score/431393.html)
+  - [Amazon](https://www.amazon.com/sp?marketplaceID=ATVPDKIKX0DER&seller=A8DKO6HP8H5CQ)
 
 ## Initial setup
+
 - Check your power supply voltage! Switch is on the side of the power supply.
 - Assemble; tape the limit switch wires back; lubricate the rods
 - Tighten belts properly (but not too tight; see below)
@@ -16,50 +17,53 @@
 - Make sure extruder has proper tension (but not too tight)
 - Autolevel (see topic below)
 - Set Z0 height
-- Calibrate extruder (see Appendix 1)
+- Calibrate extruder, see [E-Step Calibration](/guide/calibration.html#e-step-calibration)
 - Do a test print
 
 ## QQ Extruder
+
 - Print this piece before it breaks: <https://www.thingiverse.com/thing:2970718>
 - Too late, it broke already. What do I do?
-You can use a clamp to hold the broken piece in place while you print a
-replacement.
+  You can use a clamp to hold the broken piece in place while you print a
+  replacement.
 
 ## Autoleveling
+
 - leveling pad vs new leveling module (switch)
 - The leveling pad is a pain; you should use a leveling switch.
-- Where to get the switch module? Search: "flsun leveling module"
-(The "anycubic leveling sensor" can also work, but may require modification;
-Either change the wire from the switch NC contact to NO contact, or change
-Z_PROBE_ON_HIGH to 1 in robin_mini_config.txt.)
+- Where to get the switch module? Search: "flsun leveling module"  
+  (The "anycubic leveling sensor" can also work, but may require modification;  
+  Either change the wire from the switch NC contact to NO contact, or change `Z_PROBE_ON_HIGH` to `1` in robin_mini_config.txt.)
 - How to install switch module? Search: "flsun leveling module", see videos
 - DIY switch: See <https://www.thingiverse.com/thing:3741924> or
-<https://www.thingiverse.com/thing:3457361>
+  <https://www.thingiverse.com/thing:3457361>
 - manual leveling (QQ-S/Q5 only)  
-Many folks say this is more accurate than autoleveling.  
-In any case, you must do an autolevel at least once before doing manual leveling.
-- You must also set Z0! Autolevel alone doesn't guarantee correct nozzle height!  
-QQ-S: Use the menu button "Adjust Z0"  
-QQ: See [https://www.youtube.com/watch?v=8pePqGybytM ](https://www.youtube.com/watch?v=8pePqGybytM)or see Appendix 2.
+  Many folks say this is more accurate than autoleveling.  
+  In any case, you must do an autolevel at least once before doing manual leveling.
+- You must also set Z0! Autolevel alone doesn't guarantee correct nozzle height!
+  - QQ-S: Use the menu button "Adjust Z0"
+  - QQ: See [https://www.youtube.com/watch?v=8pePqGybytM ](https://www.youtube.com/watch?v=8pePqGybytM)or see Appendix 2.
+
 ## Diagonal rods
+
 - Several folks have seen the rods loosen or come out of the ball-joints.
-Reattach them using epoxy. Make sure the end is rotated and properly aligned
-with the other end. CA glue works, but doesn't give enough time to align.
+  Reattach them using epoxy. Make sure the end is rotated and properly aligned
+  with the other end. CA glue works, but doesn't give enough time to align.
 - Make sure all rods are the same length!
 - Measure the rods and enter the hole-to-hole length into config file
-("delta diagonal rod" length). The stock length is 280.0 mm (QQ/QQ-S).
+  ("delta diagonal rod" length). The stock length is 280.0 mm (QQ/QQ-S).
 - This jig can assist with rod repairs: <https://www.thingiverse.com/thing:3108080>
 
 ## Filament sensor
 
- - Yes, the firmware already supports it (definitely for QQ-S; not sure about QQ).
- - You can find designs on thingiverse.com or buy a premade module online
- - How to install:
-   - You should use the normally-open side of the switch (switch should close when filament runs out).
-     In either case, be sure you do NOT SHORT Gnd and 5V pins together!!!
-     - QQ-S: Attach to MT-DET connector between S & G pins (see board labels). V is 5V.
-     - QQ: Attach to ServoS2 connector between D4 and Gnd (2 outer pins; middle is 5V).
-     - QQ, alternate: Attach to TFT28 board, as shown:![](https://lh3.googleusercontent.com/mo6OS4di6BuBIZMEuzF7RkiM6sTSxZtixVAOMHfbDff4_zJrtMpMgvMPuC5yhFhyLHyDxZIyKAIqVleeAxEguN3PnpG6BrctYbq-dX0rcOYWAsh8RHKhFoveK-16c2bW9HxoDecY) (Figure from the TFT28 Datasheet; see link In the "More Details" section further down.)
+- Yes, the firmware already supports it (definitely for QQ-S; not sure about QQ).
+- You can find designs on thingiverse.com or buy a premade module online
+- How to install:
+  - You should use the normally-open side of the switch (switch should close when filament runs out).
+    In either case, be sure you do NOT SHORT Gnd and 5V pins together!!!
+    - QQ-S: Attach to MT-DET connector between S & G pins (see board labels). V is 5V.
+    - QQ: Attach to ServoS2 connector between D4 and Gnd (2 outer pins; middle is 5V).
+    - QQ, alternate: Attach to TFT28 board, as shown:![](https://lh3.googleusercontent.com/mo6OS4di6BuBIZMEuzF7RkiM6sTSxZtixVAOMHfbDff4_zJrtMpMgvMPuC5yhFhyLHyDxZIyKAIqVleeAxEguN3PnpG6BrctYbq-dX0rcOYWAsh8RHKhFoveK-16c2bW9HxoDecY) (Figure from the TFT28 Datasheet; see link In the "More Details" section further down.)
 
 ## Fans stay on, are noisy:
 
@@ -71,33 +75,45 @@ with the other end. CA glue works, but doesn't give enough time to align.
 - If you really want to use Noctua fans for QQ-S, use a 24->12V buck-converter (a single converter can supply power for multiple fans, since adjustable fans work by switching the ground connection on and off)
 
 ## Belts:
+
 ### How to tighten?
+
 They are tightened by turning the thumb nuts at the top of the printer.
+
 ### How much to tighten?
+
 They should be tight enough that there is some tension to keep the two sides of
 the belt from touching each other in the middle with light finger pressure.
 They should NOT be tight as guitar strings! This causes belt damage!
+
 ### How to tighten if the nuts are already bottomed out?
+
 In this case, you need to shorten the belts by a couple of teeth.
 See below on replacing.
+
 ### What are the belts? How long are they?
+
 They are 6mm GT2 belts, and each is approximately 148 cm.
+
 ### How to replace the belts?
+
 First, loosen the nuts at the top. Then remove the metal side covers.
 On the carriage, remove the 4 screws on the back to remove the back cover plate.
 The ends of the belt can then slide out from the holder.
 Motor mounts can bend: (older models had aluminum brackets instead of steel)
+
 - The motor mounts can bend if the belts were over tightened.
 - This can cause damage to the motor pulleys, belts, as well as printing problems.
 - If they are bent, you can straighten them out using brute force.
 - You should consider adding motor blocks to prevent the mounts from tilting.
-See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
+  See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
 
 ## Should I add TL smoothers?
 
 - Not necessary, but folks say they do make prints smoother.
 - They just plug inline between the main board and the motors.
 - Use double-stick foam tape to secure them in the base.
+- Silent stepper divers are more worht wile [upgrade]().
 - On Robin Mini, you can also try shorting across the resistors marked Rm6 (4 of them).
   - This forces mixed decay mode in the drivers and should result in smoother stepping.
   - This is not recommended to try as the risk of damaging the board is very high.
@@ -110,6 +126,7 @@ See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
 - You could also modify a USB cable and cut the 5V power line.
 
 ## Making the print stick:
+
 - Be sure to both autolevel and set the Z0 offset (ie, get first layer height right).
 - Set the right temperatures for nozzle and bed.
 - Use hairspray or glue stick if needed.
@@ -138,13 +155,13 @@ See <https://www.facebook.com/groups/120961628750040/permalink/438804073632459>
 - So does the Titan (clone).
 - Many folks like the Bondtech dual-drive gear extruder.
 - How to calibrate extruder?
-See instructions in Appendix 1 below.
+  See instructions in Appendix 1 below.
 
 ## Alternate extruder mounting:
 
 - Why? It provides better filament control, needing less retraction.
 - mid-mounted extruder: print a bracket <https://www.thingiverse.com/thing:3368268>
-This allows the bowden tube to be not-quite half as long.
+  This allows the bowden tube to be not-quite half as long.
 - flying extruder: Use a bracket like the one in the files section
   - This allows the bowden tube to be less than 12" (30cm) long.
   - You'll also need 3 paper clips and 3 large rubber bands (or similar material).
@@ -199,131 +216,23 @@ This allows the bowden tube to be not-quite half as long.
 - Enables easy wifi printing, time lapses, other features. <https://octoprint.org/>
 
 ## Details about the boards:
+
 - MKS Robin Mini board: <https://github.com/makerbase-mks/MKS-Robin-mini>
 - MKS Robin Nano board: <https://github.com/makerbase-mks/MKS-Robin-Nano>
 - MKS Gen L board: <https://github.com/makerbase-mks/MKS-GEN_L>
 - MKS TFT28 board: <https://github.com/makerbase-mks/MKS-TFT>
 - The HiSpeed board is a custom version of the Robin Mini board.
-  - There are two versions: 
-    - one with soldered motor drivers, 
+  - There are two versions:
+    - one with soldered motor drivers,
     - one with driver sockets.
 
 ## G-Code descriptions:
 
 - <https://reprap.org/wiki/G-code> (best one: describes all types incl. Repetier)
 - <http://marlinfw.org/meta/gcode/> (Marlin only)
-More details about TFT28, including button customization:
-- [https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/\
 
-MKS%20TFT28%2032%20DataSheet.pdf](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
-- IMG2LCD software: <https://github.com/makerbase-mks/Software/tree/master/Image2LCD>
-(A similar procedure can be used to customize QQ-S/Q5 button appearance)
+### More details about TFT28, including button customization:
 
-## Other problems:
-
-- Pulleys are loose on the motor shafts (one carriage doesn't move or doesn't always move right). Tighten them.
-- Nozzle is higher in the middle vs. the sides (or vice versa). You need to set the diagonal rod length accurately, then redo the auto-leveling. Diagonal rod length can be adjusted with the curvature buttons, or by sending the G-code `M665 L<length in mm>`. The diagonal rod length is the hole-center to hole-center distance for the diagonal rods. They all need to be the same length for accurate printing.
-- Print isn't sticking to the bed:
-- Make sure bed is clean
-- Make sure Z0 height is correct (nozzle isn't too high)
-- Make sure the temperatures are correct for the given filament
-- If necessary, use a brim or raft for extra adhesion
-- If necessary, use hairspray or glue for extra adhesion
-- The QQ-S pauses slightly when I press buttons while printing. Yes, you should avoid doing that. Or change to a different firmware.
-- There's a new board ("Hispeed") available for the QQ-S that features replaceable drivers. You can buy it from Flsun customer service, or check AliExpress for it.
-- Info about the Q5? It's like a smaller QQ-S, but with several differences:
-- Smaller print volume (210mm round by 210mm high, peak)
-- Uses MKS Robin Nano board (has replaceable drivers, support for 2 extruders); still using Repetier-based firmware; still no source code.
-- Different sliders (extruded rails & rollers vs. smooth rods)
-- Different hot-end (slide-in throat vs. screw-in throat; different heatsink mount)
-- It doesn't auto-level right: it goes to the wrong height or digs into the bed.
-You may have the Z-probe offset set incorrectly. This is the height of the nozzle above the bed when the Z-probe makes contact.
-- For the leveling switch, set with G-code: `M851 Z-16.2`
-- For the leveling pad, set with G-code: `M851 Z-1.05`
-- Then save by using G-code: `M500`
-Also, if you've adjusted something that changes the height, reset the Z0 height.
-- There's a new, cost-reduced version of the QQ-S Pro being sold now:
-- Umbilical doesn't go to top, no metal inline plug/jack anymore
-- Effector & hot-end is the same as the Q5, with only 2 fans total
-- I broke my hot-end!
-- The hot-end parts are relatively fragile, especially the throat
-- You should heat the hot-end before removing the nozzle
-(otherwise, the plastic inside can act like glue)
-- You should always use two wrenches or pliers: one to hold the stationary part, one to hold the part you're unscrewing
-- When reassembling, first assemble loosely, then push the bowden tube all the way in, then heat and tighten last bit
-(or, use the Luke Hatfield fix; see above "Under-extrusion")
-- Heating problems shown on LCD:
-TH-error1: Minimum temperature error at hot-end heater
-BED-error1: like TH-error1, but for the heated bed
-Check for:
-a) (hot-end/bed) thermistor disconnected from the motherboard
-b) (hot-end/bed) thermistor wiring is broken
-c) (hot-end/bed) thermistor itself is broken
-TH-error2: Maximum temperature error at hot-end heater
-BED-error2: like TH-error2, but for the heated bed
-Check for:
-a) (hot-end/bed) thermistor wiring is short-circuited
-b) (hot-end/bed) is on fire
-TH-error3: Hot-end not heating as expected
-BED-error3: like TH-error3, but for the heated bed
-Check for:
-a) (hot-end/bed) thermistor is not attached to (hot-end/bed)
-b) (hot-end/bed) thermistor is not making good contact with (hot-end/bed)
-c) (hot-end/bed) heater is not working properly
-d) excessive cool air is blowing on (hot-end/bed)
-- The black coating is coming off from the glass
-This is mostly a cosmetic issue. If adhesion is reduced, you can always use hairspray or glue to get it back. In fact, using hairspray or glue can act as a "buffer" to prevent a print from taking off any more of the black coating.
-If the appearance bothers you, one easy fix is to get a Buildtak, PEI sheet, or other print surface to cover the entire bed with.
-- I'd like to install silent stepper drivers. How?
-First, check if your board has sockets for the stepper drivers. The QQ and Q5 should by default, but for the QQ-S, you need to have the version of the Hispeed board that has socketed drivers. Next, unplug your printer, remove the existing driver board(s), then carefully install the new module(s) (TMC2208 or TMC2209). Next, you'll have to reverse the motor directions for the installed drivers. This can be done in hardware (by reversing the wires as they plug into the driver) or in software (in the config.txt file, look for lines that say INVERT_X_DIR or EXT0_INVERSE and change the values, then reflash this file). Finally, set the motor current by adjusting the trim pots on the driver boards. There are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
-- Can I enable UART mode for the TMC drivers?
-Yes, assuming you are using Marlin firmware and not using the wifi module. See <https://www.youtube.com/watch?v=7ShcFKXrVHo> for the Q5. QQ-S is similar.
-- It prints fine for the first few layers, then there's gaps:
-See Under-Extrusion section on page 5.
-- I can't get the driver for the printer installed on my computer.
-See: <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>
-- What else?
-
-
-Appendix 2: How to set the correct Z=0 height on the QQ or QQ-S:
-In the steps below, don't type the comment in []'s.
-Steps:
--) Set up and run the program Pronterface
-(or any program that lets you send G-code to the printer).
-Try baud rates of 250000 (QQ) or 115200 (QQ-S/Q5).
-0) Pick a height value about 5mm less than the maximum Z height of the nozzle.
-Here, we chose 365mm since the QQ's maximum Z height is around 370mm (Q5: 200mm)
-1) Send G-code: `M665 H365` [Set height value to 365mm, the height chosen above]
-2) Send G-code: `G28` [Home the printer]
-3) Send G-code: `G1 Z0 F3000` [Go to Z=0, speed = 3000mm/min or 50mm/sec]
-4) Measure the space between the nozzle and the bed. It should be around 5mm.
-If you aren't sure of the precise value, err on the low side
-(ie, if you aren't sure if it's 5 or 6mm, choose 5).
-5) Calculate new H value = 365 + measured space
-6) Put a piece of paper on the printer bed.
-7) Send G-code: `M665 H<value>` [new H value]
-8) Send G-code: `G28` [Home again, to sync with new value]
-9) Send G-code: `G1 Z0` [Go to Z=0]
-X) See if the paper moves easily, has slight friction, or is stuck tight,
-then choose:
-Paper moves easily:
-a) Increase H value by 0.1
-b) Go back to step 7
-Paper has slight friction:
-a) Send G-code: `M500` [Save the new value]
-b) You're done! Celebrate!
-Paper is stuck tight:
-a) Decrease H value by 0.1
-b) Go back to step 7
-
-
-If you just want to tweak your Z=0 setting, follow these steps:
-0) Set up and run Pronterface in order to send the bold G-codes below.
-1) Read the current delta height using `M503` (for QQ) or `M205` (for QQ-S/Q5).
-For the QQ, look in the output for the `M665` line's "H" number.
-For the QQ-S, look in the output for "Z Max Length".
-The H (height) value should be a number around `370` for the QQ/QQ-S (210 Q5).
-2) Home the printer with `G28`
-3) Put a piece of paper on the printer bed.
-4) Bring the nozzle to Z0 with `G1 Z0 F3000`
-5) Go to step (X) above.
+- [English datasheet](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
+- [IMG2LCD software](https://github.com/makerbase-mks/Software/tree/master/Image2LCD)
+  (A similar procedure can be used to customize QQ-S/Q5 button appearance)

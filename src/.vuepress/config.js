@@ -1,5 +1,7 @@
 const { description } = require("../../package");
 
+console.log('tracking', process.env.GA_TRACKING || "");
+
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -90,6 +92,8 @@ module.exports = {
           children: [
             '',
             'calibration',
+            'troubleshooting',
+            'upgrades',
             'firmware',
             'social-media'
           ]
