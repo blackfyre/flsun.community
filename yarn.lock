@@ -1169,11 +1169,6 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-google-analytics@^1.8.2":
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.8.2.tgz#96cf65f1f0ecbb3bcf6b0d10089dafe2aea875bc"
-  integrity sha512-BMFayLzT2BvXmnhM9mDHw0UPU7J0pH1X9gQA4HmZxOf7f3+atK5eJGsc1Ia/+1FTG2ESvhFLUU/CC3h5arjEJw==
-
 "@vuepress/plugin-last-updated@1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.8.2.tgz#7ce689f8d5050cf0213949bc2e5aa879c09ff4b1"
@@ -7800,6 +7795,16 @@ vuepress-plugin-container@^2.0.2:
   dependencies:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
+
+vuepress-plugin-google-gtag@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-google-gtag/-/vuepress-plugin-google-gtag-1.0.1.tgz#e5feb4f10194c6f631ff7167050377b5e10a97a0"
+  integrity sha512-IQV1FiM0DmyBiB8+9VKE85iq0Utvl3l/9NKnowgnmELxd5sDSrU8FG5ZtifAZ0iDb4T1+ixu9T5uv5/GhorbQA==
+
+vuepress-plugin-google-tag-manager@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-google-tag-manager/-/vuepress-plugin-google-tag-manager-0.0.5.tgz#de463b1ebf26f35f3c512a5875d02f7b3b60dfab"
+  integrity sha512-Hm1GNDdNmc4Vs9c3OMfTtHicB/oZWNCmzMFPdlOObVN1OjizIjImdm+LZIwiVKVndT2TQ4BPhMx7HQkovmD2Lg==
 
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"

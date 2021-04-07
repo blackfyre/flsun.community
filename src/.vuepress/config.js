@@ -1,7 +1,7 @@
 const { description } = require("../../package");
 
-console.log('tracking', process.env.GA_TRACKING || "");
-console.log('build-env', process.env.NODE_ENV);
+console.log("tracking", process.env.GA_TRACKING || "");
+console.log("build-env", process.env.NODE_ENV);
 
 module.exports = {
   /**
@@ -81,26 +81,26 @@ module.exports = {
     smoothScroll: true,
     sidebarDepth: 2,
     nav: [
-      {text: 'Forum', link: 'https://discourse.flsun.community'},
+      { text: "Forum", link: "https://discourse.flsun.community" },
       { text: "Social Media", link: "/guide/social-media/" },
       { text: "Firmware", link: "/guide/firmware/" },
     ],
     sidebar: {
-      '/guide/': [
+      "/guide/": [
         {
-          title: 'Guide',
+          title: "Guide",
           collapsable: false,
           children: [
-            '',
-            'calibration',
-            'troubleshooting',
-            'upgrades',
-            'firmware',
-            'social-media'
-          ]
-        }
+            "",
+            "calibration",
+            "troubleshooting",
+            "upgrades",
+            "firmware",
+            "social-media",
+          ],
+        },
       ],
-    }
+    },
   },
 
   /**
@@ -117,10 +117,8 @@ module.exports = {
       },
     ],
     [
-      "@vuepress/google-analytics",
-      {
-        ga: process.env.GA_TRACKING || "",
-      },
+      "vuepress-plugin-google-tag-manager",
+      { gtm: process.env.GA_TRACKING || "" },
     ],
   ],
 };
