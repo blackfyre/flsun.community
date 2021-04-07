@@ -9,6 +9,30 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "blackfyre",
+      "name": "Meki",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1991410?v=4",
+      "profile": "https://blackfyre.ninja/",
+      "contributions": [
+        "code",
+        "content",
+        "data",
+        "doc",
+        "example",
+        "ideas",
+        "infra",
+        "maintenance",
+        "projectManagement",
+        "research",
+        "review",
+        "security",
+        "tool",
+        "tutorial",
+        "userTesting"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
