@@ -1,6 +1,7 @@
 const { description } = require("../../package");
 
 console.log('tracking', process.env.GA_TRACKING || "");
+console.log('build-env', process.env.NODE_ENV);
 
 module.exports = {
   /**
