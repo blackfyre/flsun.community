@@ -1,6 +1,6 @@
 # Upgrades
 
-## Silent drivers
+## Silent drivers <Badge text="easy"/> <Badge text="cheap"/>
 
 First, check if your board has sockets for the stepper drivers. The QQ and Q5 should by default, but for the QQ-S, you need to have the version of the Hispeed board that has socketed drivers. Next, unplug your printer, remove the existing driver board(s), then carefully install the new module(s) (TMC2208 or TMC2209). Next, you'll have to reverse the motor directions for the installed drivers. This can be done in hardware (by reversing the wires as they plug into the driver) or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file). Finally, set the motor current by adjusting the trim pots on the driver boards. There are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
 
@@ -12,7 +12,7 @@ First, check if your board has sockets for the stepper drivers. The QQ and Q5 sh
 - I can't get the driver for the printer installed on my computer.
   See: <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>
 
-## From bushings to bearings
+## From bushings to bearings <Badge text="easy"/>
 
 The QQ-S uses graphite impregnated bronze bushings in the sliders, these can be optionally replaced with:
 
@@ -23,7 +23,7 @@ The QQ-S uses graphite impregnated bronze bushings in the sliders, these can be 
 Be sure to get these from a well known, respectable source!
 :::
 
-## Noctua Fans
+## Noctua Fans  <Badge text="medium"/>
 
 ### QQ-S (Pro)
 
@@ -46,7 +46,7 @@ The only extra is a buck converter of the between the board and the 2 always on 
   - This forces mixed decay mode in the drivers and should result in smoother stepping.
   - This is not recommended to try as the risk of damaging the board is very high.
 
-## Replacement extruders (the filament pusher)
+## Replacement extruders (the filament pusher)  <Badge text="easy"/>
 
 There are many options here from cheap clones to cutting edge, best of the best ones.
 
@@ -88,12 +88,12 @@ Write up a list of what features you want and choose the board accordingly!
 ::: danger
 If you proceed with this, you're doing this at your own risk. Your warranty is now void!
 :::
-### Duet 2 Wifi
+### Duet 2 Wifi <Badge text="challenging"/>
 
 Duet boards are stable, highly capable and can be configured through gcodes, supports macros and a lot of handy features for 3D Printing.  
 A guide for gutting the QQ-S Pro can be found at [Medium](https://meki.medium.com/flsun-qq-s-and-duet-2-wifi-91b9c5419668)
 
-### BigTreeTech SKR Boards
+### BigTreeTech SKR Boards <Badge text="not so hard"/>
 
 BigTreeTech became popular with it's capable, (mostly) Marlin running cost effective boards. Each generation feautres fun things like NeoPixel support, well integrated TFT screens (as addons), proper fuses,... and the list could go on...
 
