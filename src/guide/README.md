@@ -227,6 +227,10 @@ _Courtesy of TK Ward_
 - <https://reprap.org/wiki/G-code> (best one: describes all types incl. Repetier)
 - <http://marlinfw.org/meta/gcode/> (Marlin only)
 
+## CAD Files
+
+* [Old QQ-S](https://grabcad.com/library/modded-flsun-qq-s-1)
+
 ### More details about TFT28, including button customization:
 
 - [English datasheet](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
