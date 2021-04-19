@@ -16,6 +16,10 @@ You need to set the diagonal rod length accurately, then redo the auto-leveling.
 - If necessary, use a brim or raft for extra adhesion
 - If necessary, use hairspray or glue for extra adhesion
 
+## My print is skewed / leaning
+
+- Make sure that the belts are equally tight. Big differences in belt tension can cause this.
+
 ## The QQ-S pauses slightly when I press buttons while printing
 
 Yes, you should avoid doing that. Or change to a different firmware.
@@ -90,7 +94,7 @@ If the appearance bothers you, one easy fix is to get a Buildtak, PEI sheet, or 
 
 ## The fan ducts don't point at the nozzle tip:
 
-You'll probably need another fan duct... 
+You'll probably need another fan duct...
 
 - QQ-S (Pro)
   - take your pick at [Thingieverse](https://www.thingiverse.com/search?q=qq-s+fan+duct&type=things&sort=relevant)

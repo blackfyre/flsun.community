@@ -63,42 +63,42 @@ Steps:
 (or any program that lets you send G-code to the printer).
 Try baud rates of 250000 (QQ) or 115200 (QQ-S/Q5).
 
-0. Pick a height value about 5mm less than the maximum Z height of the nozzle.
+1. Pick a height value about 5mm less than the maximum Z height of the nozzle.
    Here, we chose 365mm since the QQ's maximum Z height is around 370mm (Q5: 200mm)
-1. Send G-code: `M665 H365` [Set height value to 365mm, the height chosen above]
-1. Send G-code: `G28` [Home the printer]
-1. Send G-code: `G1 Z0 F3000` [Go to Z=0, speed = 3000mm/min or 50mm/sec]
-1. Measure the space between the nozzle and the bed. It should be around 5mm.
+2. Send G-code: `M665 H365` [Set height value to 365mm, the height chosen above]
+3. Send G-code: `G28` [Home the printer]
+4. Send G-code: `G1 Z0 F3000` [Go to Z=0, speed = 3000mm/min or 50mm/sec]
+5. Measure the space between the nozzle and the bed. It should be around 5mm.
    If you aren't sure of the precise value, err on the low side
    (ie, if you aren't sure if it's 5 or 6mm, choose 5).
-1. Calculate new H value = 365 + measured space
-1. Put a piece of paper on the printer bed.
-1. Send G-code: `M665 H<value>` [new H value]
-1. Send G-code: `G28` [Home again, to sync with new value]
-1. Send G-code: `G1 Z0` [Go to Z=0]
-   X) See if the paper moves easily, has slight friction, or is stuck tight,
+6. Calculate new H value = 365 + measured space
+7. Put a piece of paper on the printer bed.
+8. Send G-code: `M665 H<value>` [new H value]
+9. Send G-code: `G28` [Home again, to sync with new value]
+10. Send G-code: `G1 Z0` [Go to Z=0]  
+See if the paper moves easily, has slight friction, or is stuck tight,
    then choose:
-   Paper moves easily:
-   a) Increase H value by 0.1
-   b) Go back to step 7
-   Paper has slight friction:
-   a) Send G-code: `M500` [Save the new value]
-   b) You're done! Celebrate!
-   Paper is stuck tight:
-   a) Decrease H value by 0.1
-   b) Go back to step 7
+     * Paper moves easily:
+       * Increase H value by 0.1
+       * Go back to step 7
+     * Paper has slight friction:
+       * Send G-code: `M500` [Save the new value]
+       * You're done! Celebrate!
+     * Paper is stuck tight:
+       * Decrease H value by 0.1
+       * Go back to step 7
 
 If you just want to tweak your Z=0 setting, follow these steps:
 
-0. Set up and run Pronterface in order to send the bold G-codes below.
-1. Read the current delta height using `M503` (for QQ) or `M205` (for QQ-S/Q5).
-   For the QQ, look in the output for the `M665` line's "H" number.
-   For the QQ-S, look in the output for "Z Max Length".
-   The H (height) value should be a number around `370` for the QQ/QQ-S (210 Q5).
-1. Home the printer with `G28`
-1. Put a piece of paper on the printer bed.
-1. Bring the nozzle to Z0 with `G1 Z0 F3000`
-1. Go to step (X) above.
+1. Set up and run Pronterface in order to send the bold G-codes below.
+2. Read the current delta height using `M503` (for QQ) or `M205` (for QQ-S/Q5).
+   * For the QQ, look in the output for the `M665` line's "H" number.
+    * For the QQ-S, look in the output for "Z Max Length".  
+    The H (height) value should be a number around `370` for the QQ/QQ-S (210 Q5).
+3. Home the printer with `G28`
+4. Put a piece of paper on the printer bed.
+5. Bring the nozzle to Z0 with `G1 Z0 F3000`
+6. Go to step (X) above.
 
 ## Dialing in the retraction
 
@@ -126,3 +126,9 @@ Temperature calibration is usually done with a towet like structure which has ch
 - [Cura plugin featured by CHEP](https://www.youtube.com/watch?v=6LjbCIGCmd0&ab_channel=CHEP)
 
 There's also the manual option, thingieverse is loaded with these towers, bout you'll have to about manually changing the values for each section.
+
+## Proper belt tensioning
+
+### QQ-S (Pro)
+
+FLSUN made a really good video on how to tension the belts properly, check it out at [https://www.youtube.com/watch?v=N6FpQ8kDm-A](https://www.youtube.com/watch?v=N6FpQ8kDm-A)
