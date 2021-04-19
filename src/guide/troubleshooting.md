@@ -11,6 +11,8 @@ You need to set the diagonal rod length accurately, then redo the auto-leveling.
 ## Print isn't sticking to the bed
 
 - Make sure bed is clean
+  * Wipe the bed with Isopropyl Alcohol a.k.a. rubbing alcohol regurarly
+  * Use dishwashing liquid to remove grease from the bed
 - Make sure Z0 height is correct (nozzle isn't too high)
 - Make sure the temperatures are correct for the given filament
 - If necessary, use a brim or raft for extra adhesion
