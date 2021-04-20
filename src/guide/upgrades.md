@@ -23,7 +23,7 @@ The QQ-S uses graphite impregnated bronze bushings in the sliders, these can be 
 Be sure to get these from a well known, respectable source!
 :::
 
-## Noctua Fans  <Badge text="medium"/>
+## Noctua Fans <Badge text="medium"/>
 
 ### QQ-S (Pro)
 
@@ -46,7 +46,7 @@ The only extra is a buck converter of the between the board and the 2 always on 
   - This forces mixed decay mode in the drivers and should result in smoother stepping.
   - This is not recommended to try as the risk of damaging the board is very high.
 
-## Replacement extruders (the filament pusher)  <Badge text="easy"/>
+## Replacement extruders (the filament pusher) <Badge text="easy"/>
 
 There are many options here from cheap clones to cutting edge, best of the best ones.
 
@@ -79,7 +79,7 @@ This allows the bowden tube to be less than 12" (30cm) long.
 
 ## Board switch
 
-Ditching the factory board can have advantages like the handling more stepper drivers (for multiple extruders) or add RGB LED controlling feature through a NeoPixel Bus interface or just and order of magnitude higher computational capacity (Delta style printers require a higher level of computational power than Cartesian style ones). 
+Ditching the factory board can have advantages like the handling more stepper drivers (for multiple extruders) or add RGB LED controlling feature through a NeoPixel Bus interface or just and order of magnitude higher computational capacity (Delta style printers require a higher level of computational power than Cartesian style ones).
 
 ::: tip
 Write up a list of what features you want and choose the board accordingly!
@@ -88,6 +88,7 @@ Write up a list of what features you want and choose the board accordingly!
 ::: danger
 If you proceed with this, you're doing this at your own risk. Your warranty is now void!
 :::
+
 ### Duet 2 Wifi <Badge text="challenging"/>
 
 Duet boards are stable, highly capable and can be configured through gcodes, supports macros and a lot of handy features for 3D Printing.  
@@ -98,3 +99,16 @@ A guide for gutting the QQ-S Pro can be found at [Medium](https://meki.medium.co
 BigTreeTech became popular with it's capable, (mostly) Marlin running cost effective boards. Each generation feautres fun things like NeoPixel support, well integrated TFT screens (as addons), proper fuses,... and the list could go on...
 
 Theres replacement demonstation over at [Youtube](https://www.youtube.com/watch?v=lo4q7uVZlwU&ab_channel=EEtransmit)
+
+## Optical Endstops
+
+### QQ-S (Pro) <Badge text="easy"/> <Badge text="cheap"/>
+
+The factory board has 3 pin connectors for the endstops which means that you can get power to more advanced endstops as well. The cheapest and most precise option is to use an optical endstop.  
+There are a couple of options on thingiverse, but the best so far can be found at: [https://www.thingiverse.com/thing:4677442](https://www.thingiverse.com/thing:4677442)  
+There are a couple of advantages:
+
+- No more clicky-clicky when homing
+- You'll get an additional 30mm of Z height
+- Optical endstops don't wear out mechanically
+- They are more precise than mechanical switches

@@ -81,7 +81,7 @@ module.exports = {
     smoothScroll: true,
     sidebarDepth: 2,
     nav: [
-      { text: "Forum", link: "https://discourse.flsun.community" },
+      { text: "Forum", link: "https://github.com/blackfyre/flsun.community/discussions" },
       { text: "Social Media", link: "/guide/social-media/" },
       { text: "Firmware", link: "/guide/firmware/" },
     ],

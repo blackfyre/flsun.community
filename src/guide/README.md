@@ -153,6 +153,9 @@ There are a couple of options here:
 
 - Setting up Repetier
 - Or use a RaspberryPi with Octoprint instead. It's better.
+  - No more SD card
+  - GCODE console
+  - lots of usability improving pl
 
 ### Setting up repetier
 
