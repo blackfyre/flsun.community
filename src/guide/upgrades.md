@@ -4,15 +4,17 @@
 
 If your glass coating breaks down, or just don't want to wait for the bed to cool down so you can grap your print, a PEI coated spring steel plate is easily the best upgrade you can get.  
 There are a variety of available plates:
- * PEI coated on one side, bare steel on the other side
- * Smooth PEI coat on one side, rough textured on the other side
+
+- PEI coated on one side, bare steel on the other side
+- Smooth PEI coat on one side, rough textured on the other side
 
 ### Installation
 
 It's easy:
+
 1. Clean the glass of any grease & debris
 2. Attach the giant fridge magnet (sticky side to the glass)
-3. Place the PEI coated plate on the fridge magnet 
+3. Place the PEI coated plate on the fridge magnet
 4. Enjoy!
 
 ::: tip
@@ -137,26 +139,29 @@ There are a couple of advantages:
 Each drive setup (direct, bowden) has it's advantages, but if you want to print flexible materials like TPU, the bowden setup is detrimental to just about everything you would expect (print time, quality, ...). Not to mention that it puts extra strain on your extruder motor as it has to work overtime.  
 But, as the extruder is moved, the weight is added to the effector/carriage assembly which can result in a quality drop.  
 In general, we're talking about 2 options and variations on those themes:
- * A Flying extruder
-   * This shortens the bowden tube to a couple of centimeters
-   * The load bearing parts are the carriages, not the effector
-   * Parts can usually be printed in PLA
- * Actual Direct Drive 
-   * This effectively removes the bowden tube from the equation
-   * Adds extra weight to the effector which can result in artefacts and quality drop
-   * Some parts will have to be made in temperature resistant materials
+
+- A Flying extruder
+  - This shortens the bowden tube to a couple of centimeters
+  - The load bearing parts are the carriages, not the effector
+  - Parts can usually be printed in PLA
+- Actual Direct Drive
+  - This effectively removes the bowden tube from the equation
+  - Adds extra weight to the effector which can result in artefacts and quality drop
+  - Some parts will have to be made in temperature resistant materials
 
 ### Q5
 
 #### Flying Extruders:
- * There's a gimbal mounting in progress, will update this once it's released
+
+- There's a gimbal mounting in progress, will update this once it's released
 
 ### QQ-S (Pro)
 
 #### Flying Extruders (You might have to mix parts):
- * For the factory extruder: [https://www.thingiverse.com/thing:3840025](https://www.thingiverse.com/thing:3840025)
- * BMG version: [https://www.thingiverse.com/thing:4355343](https://www.thingiverse.com/thing:4355343)
 
+- For the factory extruder: [https://www.thingiverse.com/thing:3840025](https://www.thingiverse.com/thing:3840025)
+- BMG version: [https://www.thingiverse.com/thing:4355343](https://www.thingiverse.com/thing:4355343)
 
-#### Direct Drive solutions: 
- * [https://www.thingiverse.com/thing:4830145](https://www.thingiverse.com/thing:4830145)
+#### Direct Drive solutions:
+
+- [https://www.thingiverse.com/thing:4830145](https://www.thingiverse.com/thing:4830145)
