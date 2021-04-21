@@ -62,6 +62,15 @@ module.exports = {
       { name: "msapplication-TileImage", content: "/mstile-150x150.png" },
     ],
     ["meta", { name: "msapplication-TileColor", content: "#2b5797" }],
+    [
+      "script",
+      {
+        async: "",
+        src:
+          "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + process.env.GA_ADSENSE_ID || "",
+        crossorigin: "anonymous",
+      },
+    ],
   ],
 
   /**
@@ -81,7 +90,10 @@ module.exports = {
     smoothScroll: true,
     sidebarDepth: 2,
     nav: [
-      { text: "Forum", link: "https://github.com/blackfyre/flsun.community/discussions" },
+      {
+        text: "Forum",
+        link: "https://github.com/blackfyre/flsun.community/discussions",
+      },
       { text: "Social Media", link: "/guide/social-media/" },
       { text: "Firmware", link: "/guide/firmware/" },
     ],
