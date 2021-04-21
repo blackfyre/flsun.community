@@ -1,5 +1,24 @@
 # Upgrades
 
+## PEI Coated Spring Steel build plate <Badge text="easy"/>
+
+If your glass coating breaks down, or just don't want to wait for the bed to cool down so you can grap your print, a PEI coated spring steel plate is easily the best upgrade you can get.  
+There are a variety of available plates:
+ * PEI coated on one side, bare steel on the other side
+ * Smooth PEI coat on one side, rough textured on the other side
+
+### Installation
+
+It's easy:
+1. Clean the glass of any grease & debris
+2. Attach the giant fridge magnet (sticky side to the glass)
+3. Place the PEI coated plate on the fridge magnet 
+4. Enjoy!
+
+::: tip
+As you're introducing a couple of new layers the bed temperature may need to be adjusted.
+:::
+
 ## Silent drivers <Badge text="easy"/> <Badge text="cheap"/>
 
 First, check if your board has sockets for the stepper drivers. The QQ and Q5 should by default, but for the QQ-S, you need to have the version of the Hispeed board that has socketed drivers. Next, unplug your printer, remove the existing driver board(s), then carefully install the new module(s) (TMC2208 or TMC2209). Next, you'll have to reverse the motor directions for the installed drivers. This can be done in hardware (by reversing the wires as they plug into the driver) or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file). Finally, set the motor current by adjusting the trim pots on the driver boards. There are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
