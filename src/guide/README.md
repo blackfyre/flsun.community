@@ -91,16 +91,24 @@ They are tightened by turning the thumb nuts at the top of the printer.
 
 They should be tight enough that there is some tension to keep the two sides of
 the belt from touching each other in the middle with light finger pressure.
-They should NOT be tight as guitar strings! This causes belt damage!
+They should NOT be tight as guitar strings! This causes belt damage!  
+You can also checkout the relevant [Calbiraton section](/guide/calibration.html#proper-belt-tensioning)
 
 ### How to tighten if the nuts are already bottomed out?
 
-In this case, you need to shorten the belts by a couple of teeth.
-See below on replacing.
+In this case:
+ 1. check your belts for damage,
+ 2. If not damaged, you'll need to shorten the belts by a couple of teeth.
+
+For relevant steps, see the [replacement method](/guide/#how-to-replace-the-belts).
 
 ### What are the belts? How long are they?
 
-They are 6mm GT2 belts, and each is approximately 148 cm.
+They are 6mm GT2 belts, and each is approximately 148 cm for the QQ-S (Pro).  
+
+:::tip
+Don't use steel core belts as they will damage the idlers/drive gear as they are made from aluminium.
+:::
 
 ### How to replace the belts?
 
