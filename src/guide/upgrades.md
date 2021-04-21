@@ -14,7 +14,7 @@ First, check if your board has sockets for the stepper drivers. The QQ and Q5 sh
 
 ## From bushings to bearings <Badge text="easy"/>
 
-The QQ-S uses graphite impregnated bronze bushings in the sliders, these can be optionally replaced with:
+The QQ-S uses graphite impregnated bronze bushings in the carriages, these can be optionally replaced with:
 
 - LM8UU linear bearings
 - IGUS RJ4JP-01-08 or IGUS RJ4JP-03-08
@@ -120,7 +120,7 @@ But, as the extruder is moved, the weight is added to the effector/carriage asse
 In general, we're talking about 2 options and variations on those themes:
  * A Flying extruder
    * This shortens the bowden tube to a couple of centimeters
-   * The load bearing parts are the sliders, not the effector
+   * The load bearing parts are the carriages, not the effector
    * Parts can usually be printed in PLA
  * Actual Direct Drive 
    * This effectively removes the bowden tube from the equation
