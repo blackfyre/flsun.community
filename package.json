@@ -21,6 +21,7 @@
     "@vuepress/plugin-medium-zoom": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2",
     "all-contributors-cli": "^6.20.0",
+    "vue-cookie-law": "^1.13.3",
     "vuepress": "^1.8.2",
     "vuepress-plugin-google-tag-manager": "^0.0.5"
   }
