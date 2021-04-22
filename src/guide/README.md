@@ -24,7 +24,7 @@ The rest of the credit goes to the repository contributors, which you can join a
 - Make sure extruder has proper tension (but not too tight)
 - Autolevel (see topic below)
 - Set Z0 height
-- Calibrate extruder, see [E-Step Calibration](/guide/calibration.html#e-step-calibration)
+- Calibrate extruder, see [E-Step Calibration](/guide/calibration.md#e-step-calibration)
 - Do a test print
 
 ## QQ Extruder
@@ -92,7 +92,7 @@ They are tightened by turning the thumb nuts at the top of the printer.
 They should be tight enough that there is some tension to keep the two sides of
 the belt from touching each other in the middle with light finger pressure.
 They should NOT be tight as guitar strings! This causes belt damage!  
-You can also checkout the relevant [Calbiraton section](/guide/calibration.html#proper-belt-tensioning)
+You can also checkout the relevant [Calbiraton section](/guide/calibration.md#proper-belt-tensioning)
 
 ### How to tighten if the nuts are already bottomed out?
 
@@ -142,7 +142,7 @@ Motor mounts can bend: (older models had aluminum brackets instead of steel)
 - Make sure the nozzle isn't too close to the bed (first layer only).
 - Check the nozzle itself for any blockage or deformity.
 - Confirm slicer settings (filament diameter).
-- [Calibrate your extruder](/guide/calibration.html#e-step-calibration).
+- [Calibrate your extruder](/guide/calibration.md#e-step-calibration).
 - Make sure your hot-end temperature is appropriate for the filament you're using.
 - Make sure your print speed isn't too fast for the filament/nozzle you're using
 - (use a lower speed for the first layer).

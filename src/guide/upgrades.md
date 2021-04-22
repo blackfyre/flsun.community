@@ -62,7 +62,7 @@ The only extra is a buck converter of the between the board and the 2 always on 
 - Not necessary, but folks say they do make prints smoother.
 - They just plug inline between the main board and the motors.
 - Use double-stick foam tape to secure them in the base.
-- Silent stepper divers are more worht wile [upgrade](/guide/upgrades.html#silent-drivers).
+- Silent stepper divers are more worht wile [upgrade](/guide/upgrades.md#silent-drivers).
 - On Robin Mini, you can also try shorting across the resistors marked Rm6 (4 of them).
   - This forces mixed decay mode in the drivers and should result in smoother stepping.
   - This is not recommended to try as the risk of damaging the board is very high.

@@ -13,7 +13,8 @@
     "eject": "vuepress eject",
     "build": "vuepress build src --dest=dist",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "check:links": "vuepress check-md src"
   },
   "license": "MIT",
   "devDependencies": {
