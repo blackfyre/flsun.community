@@ -24,5 +24,8 @@
     "vue-cookie-law": "^1.13.0",
     "vuepress": "^1.8.2",
     "vuepress-plugin-google-tag-manager": "^0.0.5"
+  },
+  "dependencies": {
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }

@@ -132,5 +132,9 @@ module.exports = {
       "vuepress-plugin-google-tag-manager",
       { gtm: process.env.GA_TRACKING || "" },
     ],
+    ['sitemap', {
+      hostname: 'https://flsun.community',
+      exclude: ['/404.html']
+    }]
   ],
 };
