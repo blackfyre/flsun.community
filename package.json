@@ -23,7 +23,12 @@
     "all-contributors-cli": "^6.20.0",
     "vue-cookie-law": "^1.13.0",
     "vuepress": "^1.8.2",
-    "vuepress-plugin-google-tag-manager": "^0.0.5"
+    "vuepress-plugin-authors": "^0.0.2",
+    "vuepress-plugin-check-md": "^0.0.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-google-tag-manager": "^0.0.5",
+    "vuepress-plugin-qrcode": "^1.0.7",
+    "vuepress-plugin-seo": "^0.1.4"
   },
   "dependencies": {
     "vuepress-plugin-robots": "^1.0.1",
