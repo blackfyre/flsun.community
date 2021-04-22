@@ -95,8 +95,8 @@ module.exports = {
         text: "Forum",
         link: "https://github.com/blackfyre/flsun.community/discussions",
       },
-      { text: "Social Media", link: "/guide/social-media/" },
-      { text: "Firmware", link: "/guide/firmware/" },
+      { text: "Social Media", link: "/guide/social-media.html" },
+      { text: "Firmware", link: "/guide/firmware.html" },
     ],
     sidebar: {
       "/guide/": [
