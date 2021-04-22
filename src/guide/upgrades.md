@@ -23,7 +23,19 @@ As you're introducing a couple of new layers the bed temperature may need to be 
 
 ## Silent stepper drivers <Badge text="easy"/> <Badge text="cheap"/>
 
-First, check if your board has sockets for the stepper drivers. The QQ and Q5 should by default, but for the QQ-S, you need to have the version of the Hispeed board that has socketed drivers. Next, unplug your printer, remove the existing driver board(s), then carefully install the new module(s) (TMC2208 or TMC2209). Next, you'll have to reverse the motor directions for the installed drivers. This can be done in hardware (by reversing the wires as they plug into the driver) or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file). Finally, set the motor current by adjusting the trim pots on the driver boards. There are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
+0.  Check if your board has sockets for the stepper drivers.
+    - The QQ and Q5 should by default
+    - The QQ-S, you need to have the version of the Hispeed board that has socketed drivers.
+1.  Unplug your printer, remove the existing driver board(s)
+1.  Carefully install the new module(s) (TMC2208 or TMC2209).
+1.  You'll have to reverse the motor directions for the installed drivers.
+
+- This can be done in hardware (by reversing the wires as they plug into the driver)
+- or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file).
+
+4.  Finally, set the motor current by adjusting the trim pots on the driver boards.
+
+If you prefer the visual approach, there are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
 
 ### Troubleshooting & FAQ
 
@@ -32,6 +44,8 @@ First, check if your board has sockets for the stepper drivers. The QQ and Q5 sh
 - It prints fine for the first few layers, then there's gaps: it's under extruding
 - I can't get the driver for the printer installed on my computer.
   See: <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>
+- Extruder is LOUD!  
+  Reduce the extruders max acceleration to 250mm/s<sup>2</sup>
 
 ## From bushings to bearings <Badge text="easy"/>
 
@@ -42,6 +56,10 @@ The QQ-S uses graphite impregnated bronze bushings in the carriages, these can b
 
 ::: tip
 Be sure to get these from a well known, respectable source!
+:::
+
+::: warning
+Plastic bushings will wear out faster than the bronze bushings!
 :::
 
 ## Noctua Fans <Badge text="medium"/>
