@@ -67,7 +67,8 @@ module.exports = {
       {
         async: "",
         src:
-          "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + process.env.GA_ADSENSE_ID || "",
+          "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
+            process.env.GA_ADSENSE_ID || "",
         crossorigin: "anonymous",
       },
     ],
@@ -132,9 +133,25 @@ module.exports = {
       "vuepress-plugin-google-tag-manager",
       { gtm: process.env.GA_TRACKING || "" },
     ],
-    ['sitemap', {
-      hostname: 'https://flsun.community',
-      exclude: ['/404.html']
-    }]
+    [
+      "sitemap",
+      {
+        hostname: "https://flsun.community",
+        exclude: ["/404.html"],
+      },
+    ],
+    [
+      "robots",
+      {
+        host: "https://flsun.community",
+        disallowAll: false,
+        allowAll: true,
+        policies: [
+          {
+            userAgent: "*",
+          },
+        ],
+      },
+    ],
   ],
 };
