@@ -120,9 +120,7 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    ["check-md", {
-      pattern: 'src/**/*.md'
-    }],
+    ["check-md"],
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     [

@@ -2,9 +2,11 @@
 
 ## About
 
+This site is inteded to answer the most common questions around FLSUN 3D Printers, be it simple maintenance, upgrades or troubleshooting them. While most of the knowledge found here can be applied to most Delta type printers in the wild, it never hurts to have something specific to our own.
+
 :::tip Kudos
 This guide is based on the FAQ of the largest FLSUN facebook group, credit for compiling most of knowledge goes to the original authors of that document.  
-The rest of the credit goes to the repository contributors, which you can join any time!
+The rest of the credit goes to the repository contributors, whom you can join any time!
 :::
 
 ## How to contact Flsun

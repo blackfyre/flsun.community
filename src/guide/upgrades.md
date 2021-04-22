@@ -21,7 +21,7 @@ It's easy:
 As you're introducing a couple of new layers the bed temperature may need to be adjusted.
 :::
 
-## Silent drivers <Badge text="easy"/> <Badge text="cheap"/>
+## Silent stepper drivers <Badge text="easy"/> <Badge text="cheap"/>
 
 First, check if your board has sockets for the stepper drivers. The QQ and Q5 should by default, but for the QQ-S, you need to have the version of the Hispeed board that has socketed drivers. Next, unplug your printer, remove the existing driver board(s), then carefully install the new module(s) (TMC2208 or TMC2209). Next, you'll have to reverse the motor directions for the installed drivers. This can be done in hardware (by reversing the wires as they plug into the driver) or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file). Finally, set the motor current by adjusting the trim pots on the driver boards. There are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
 
@@ -62,7 +62,7 @@ The only extra is a buck converter of the between the board and the 2 always on 
 - Not necessary, but folks say they do make prints smoother.
 - They just plug inline between the main board and the motors.
 - Use double-stick foam tape to secure them in the base.
-- Silent stepper divers are more worht wile [upgrade](/guide/upgrades.md#silent-drivers).
+- Silent stepper divers are more worht wile [upgrade](/guide/upgrades.md#silent-stepper-drivers).
 - On Robin Mini, you can also try shorting across the resistors marked Rm6 (4 of them).
   - This forces mixed decay mode in the drivers and should result in smoother stepping.
   - This is not recommended to try as the risk of damaging the board is very high.

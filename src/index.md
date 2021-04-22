@@ -2,8 +2,8 @@
 home: true
 heroImage: /hero.png
 heroText: null
-heroAlt: FLSUN Community HUB Hero image
-tagline: Community page for FLSUN 3D Printer owners
+heroAlt: FLSUN Community HUB BIG Logo
+tagline: Community knowledgebase for FLSUN 3D Printer owners
 actionText: Quick Start →
 actionLink: /guide/
 features:
@@ -14,6 +14,6 @@ features:
 - title: Social Media groups
   details: Connect with others!
 - title: Firmwares
-  details: Firmwares, for your custom needs!
+  details: Custom solutions, for your custom needs!
 footer: Made by the FLSUN Community with ❤️
 ---
