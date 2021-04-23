@@ -166,5 +166,12 @@ module.exports = {
       },
     ],
     ["flowchart"],
+    [
+      'vuepress-plugin-git-log',
+      {
+        additionalArgs: '--no-merge',
+        onlyFirstAndLastCommit: true,
+      },
+    ],
   ],
 };

@@ -8283,13 +8283,6 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-plugin-authors@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-authors/-/vuepress-plugin-authors-0.0.2.tgz#f3442b3ebb330e0020b964118cc978dcb8da6c9d"
-  integrity sha512-07opP9BM323RPnBnZMGdEV2bv/ulswP68iBeC3ml4HjsxTjMfQtLNSTynBtsgUaycS9BEpkh7xXEpLcnMVUfIA==
-  dependencies:
-    cross-spawn "^6.0.5"
-
 vuepress-plugin-check-md@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-check-md/-/vuepress-plugin-check-md-0.0.2.tgz#e0c5f296948fa5df24280971ee6a725c00a88738"
@@ -8316,6 +8309,13 @@ vuepress-plugin-flowchart@^1.4.3:
   integrity sha512-Vyhh2xiCvMoubwBBDdre5u2tekp3B0N9vGDxAbgHUJH5L6V1venq1pWsbhKi9Wmr2Pa/yOTq3se1ji2w/kDr+A==
   dependencies:
     flowchart.js "^1.11.3"
+
+vuepress-plugin-git-log@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-git-log/-/vuepress-plugin-git-log-1.0.1.tgz#22a6053ac2a2c9a8b5e9b5c4b08dcaa6dbf1d3f2"
+  integrity sha512-oVUfHdfvP0e7JBRIgwJ/Kmxj1AO+JJyTEsNRnBRw7YBlIfJIIC/zcGFidupsw6LSr1+UTHdGqn2vlYr8Ade6Fw==
+  dependencies:
+    cross-spawn "^6.0.5"
 
 vuepress-plugin-google-tag-manager@^0.0.5:
   version "0.0.5"
