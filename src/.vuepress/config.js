@@ -165,5 +165,6 @@ module.exports = {
         channel: true,
       },
     ],
+    ["flowchart"],
   ],
 };

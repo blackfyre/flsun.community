@@ -11,6 +11,10 @@ You'll have to nave Node.JS 12>= + Yarn installed, details are in the `package.j
 
 VuePress documentation at https://vuepress.vuejs.org/
 
+### Flow chart supports
+
+We can create flow charts, read more about this at https://flowchart.vuepress.ulivz.com/#syntax
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
