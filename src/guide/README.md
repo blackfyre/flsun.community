@@ -169,26 +169,26 @@ There are a couple of options here:
 
 ### Setting up repetier
 
-1.  Setup your QQ-S wifi as per this video
+1.  Setup your QQ-S wifi
 2.  Log on to your wifi router and get the assigned IP address for your printer, then write it down
 3.  install Repetier Host from here https://www.repetier.com/download-now/
 4.  Start Repetier
-    1. Click on ‘Config’ then ‘Printer settings’ make sure you are on the connections tab
+    1. Click on `Config` then `Printer settings` make sure you are on the connections tab
     2. Change the IP address to the one you wrote down from your router
     3. Make sure the port is 8080
     4. Click on the printer tab
-    5. Click on check box for ‘Y axis’ invert direction so that it is ticked
-    6. Click on the ‘Extruder’ tab
+    5. Click on check box for `Y axis` invert direction so that it is ticked
+    6. Click on the `Extruder` tab
     7. Change extruder temp to 270, Bed temp to 120
     8. Make sure that the extruder nozzle diameter and numbers of extruders is set correctly
-    9. Click on the ‘Printer shape’ tab
+    9. Click on the `Printer shape` tab
     10. Change shape to Rostock
     11. Change home z = 376, x = 0, y =0
     12. Change radius to 130, and height to 376
 5.  Click on Apply, then OK
 6.  Click on connect.
-    If everything is connected and you have the correct Wifi data you should be able to see ‘Disconnect’ instead of ‘Connect’.
-    Click on the ‘Manual Control’ tab and you should be able to jog the Printer from the PC.
+    If everything is connected and you have the correct Wifi data you should be able to see `Disconnect` instead of `Connect`.
+    Click on the `Manual Control` tab and you should be able to jog the Printer from the PC.
 7.  Have fun and enjoy!!
 
 _Courtesy of TK Ward_
