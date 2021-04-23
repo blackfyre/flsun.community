@@ -112,7 +112,7 @@ Retraction calibration is usually done with a towet like structure which has cha
 - [Teaching Tech's guide](https://teachingtechyt.github.io/calibration.html#retraction)
 - [Cura plugin featured by CHEP](https://www.youtube.com/watch?v=6LjbCIGCmd0&ab_channel=CHEP)
 
-There's also the manual option, thingieverse is loaded with these towers, bout you'll have to about manually changing the values for each section.
+There's also the manual option, thingieverse is loaded with these towers, bout you'll have to go about manually changing the values for each section.
 
 ## Dialing in the temperature
 
@@ -125,7 +125,7 @@ Temperature calibration is usually done with a towet like structure which has ch
 - [Teaching Tech's guide](https://teachingtechyt.github.io/calibration.html#temp)
 - [Cura plugin featured by CHEP](https://www.youtube.com/watch?v=6LjbCIGCmd0&ab_channel=CHEP)
 
-There's also the manual option, thingieverse is loaded with these towers, bout you'll have to about manually changing the values for each section.
+There's also the manual option, thingieverse is loaded with these towers, bout you'll have to go about manually changing the values for each section.
 
 ## Proper belt tensioning
 
