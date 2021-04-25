@@ -53,17 +53,6 @@ The rest of the credit goes to the repository contributors, whom you can join an
   - QQ-S: Use the menu button "Adjust Z0"
   - QQ: See [https://www.youtube.com/watch?v=8pePqGybytM ](https://www.youtube.com/watch?v=8pePqGybytM)or see Appendix 2.
 
-## Filament sensor
-
-- Yes, the firmware already supports it (definitely for QQ-S; not sure about QQ).
-- You can find designs on thingiverse.com or buy a premade module online
-- How to install:
-  - You should use the normally-open side of the switch (switch should close when filament runs out).
-    In either case, be sure you do NOT SHORT Gnd and 5V pins together!!!
-    - QQ-S: Attach to MT-DET connector between S & G pins (see board labels). V is 5V.
-    - QQ: Attach to ServoS2 connector between D4 and Gnd (2 outer pins; middle is 5V).
-    - QQ, alternate: Attach to TFT28 board, as shown:![](https://lh3.googleusercontent.com/mo6OS4di6BuBIZMEuzF7RkiM6sTSxZtixVAOMHfbDff4_zJrtMpMgvMPuC5yhFhyLHyDxZIyKAIqVleeAxEguN3PnpG6BrctYbq-dX0rcOYWAsh8RHKhFoveK-16c2bW9HxoDecY) (Figure from the TFT28 Datasheet; see link In the "More Details" section further down.)
-
 ## What is the stock Hot End?
 
 - QQ/QQ-S: It's a combination of: XCR BP6 block, mk8 nozzle, V6-clone heatsink & throat
