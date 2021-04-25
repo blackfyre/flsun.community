@@ -11,8 +11,8 @@ You need to set the diagonal rod length accurately, then redo the auto-leveling.
 ## Print isn't sticking to the bed
 
 - Make sure bed is clean
-  * Wipe the bed with Isopropyl Alcohol a.k.a. rubbing alcohol regurarly
-  * Use dishwashing liquid to remove grease from the bed
+  - Wipe the bed with Isopropyl Alcohol a.k.a. rubbing alcohol regurarly
+  - Use dishwashing liquid to remove grease from the bed
 - Make sure Z0 height is correct (nozzle isn't too high)
 - Make sure the temperatures are correct for the given filament
 - If necessary, use a brim or raft for extra adhesion
@@ -102,3 +102,40 @@ You'll probably need another fan duct...
   - take your pick at [Thingieverse](https://www.thingiverse.com/search?q=qq-s+fan+duct&type=things&sort=relevant)
 - Q5:
   - take your pick at [Thingieverse](https://www.thingiverse.com/search?q=q5+fan+duct&type=things&sort=relevant)
+
+## Diagonal rods fell apart
+
+Several folks have seen the rods loosen or come out of the ball-joints.  
+Reattach them using epoxy. Make sure the end is rotated and properly aligned with the other end.
+
+- Make sure all rods are the same length!
+- Measure the rods and enter the hole-to-hole length into config file ("delta diagonal rod" length). The stock length is 280.0 mm (QQ/QQ-S).
+- This jig can assist with rod repairs: <https://www.thingiverse.com/thing:3108080>
+
+::: warning
+CA glue works, but doesn't give enough time to align the parts.
+:::
+
+## Under-extrusion, or extruder is clicking without pushing filament
+
+- Confirm that the bowden tube is tight against the nozzle with no gaps.
+- Consider the Luke Hatfield fix; see <https://www.youtube.com/watch?v=7tCxO17XZtw>
+- Confirm that the hot-end nozzle is firm against the throat (not the block).
+- Confirm that the hot-end heatsink is being properly cooled.
+- Check the extruder gear spring tension (counter-clockwise to tighten on QQ-S/Q5).
+- Make sure the nozzle isn't too close to the bed (first layer only).
+- Check the nozzle itself for any blockage or deformity.
+- Confirm slicer settings (filament diameter).
+- [Calibrate your extruder](/guide/calibration.md#e-step-calibration).
+- Make sure your hot-end temperature is appropriate for the filament you're using.
+- Make sure your print speed isn't too fast for the filament/nozzle you're using
+- (use a lower speed for the first layer).
+
+## Fans stay on, are noisy
+
+- Add an inline power switch: search "iec cord switch"
+- Add thermoswitches (KSD9700, 45C, N.O.)
+  - one for power supply fan (mount it in the donut)
+  - one for chassis fan (mount it next to motor driver heatsinks)
+- The fans are 60x60x15, 12V (QQ) or 24V (QQ-S) (except for power supply fan: 12V)
+- You can consider the [Noctua mod](/guide/upgrades.md#noctua-fans)

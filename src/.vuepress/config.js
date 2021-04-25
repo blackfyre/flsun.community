@@ -107,12 +107,23 @@ module.exports = {
             "",
             "calibration",
             "troubleshooting",
+            "qq-s-maintenance",
             "upgrades",
             "firmware",
             "social-media",
           ],
         },
       ],
+      "/bom/": [
+        {
+          title: "BOM",
+          collapsable: false,
+          children: [
+            "",
+            "qq-s"
+          ]
+        }
+      ]
     },
   },
 
