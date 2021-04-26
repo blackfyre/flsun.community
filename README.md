@@ -3,7 +3,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Source code for the [https://flsun.community](https://flsun.community) VuePress site.
+Source code for the [https://flsun.community](https://flsun.community) VuePress site.  
+All contributions are welcome! And don't be daunted, it's easier than it seems :grin:
 
 ## Getting it running locally
 

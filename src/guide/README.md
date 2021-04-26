@@ -53,14 +53,6 @@ The rest of the credit goes to the repository contributors, whom you can join an
   - QQ-S: Use the menu button "Adjust Z0"
   - QQ: See [https://www.youtube.com/watch?v=8pePqGybytM ](https://www.youtube.com/watch?v=8pePqGybytM)or see Appendix 2.
 
-## What is the stock Hot End?
-
-- QQ/QQ-S: It's a combination of: XCR BP6 block, mk8 nozzle, V6-clone heatsink & throat
-
-### Can I upgrade to E3D V6? Sure! Many people have.
-
-- Q5, and late-model QQ-S Pros: It's totally different; like Ender 3 (tbd)
-
 ## Wifi
 
 There are a couple of options here:
@@ -153,3 +145,7 @@ _Courtesy of TK Ward_
 - [English datasheet](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
 - [IMG2LCD software](https://github.com/makerbase-mks/Software/tree/master/Image2LCD)
   (A similar procedure can be used to customize QQ-S/Q5 button appearance)
+
+## Bill of Materials
+
+There's a BOM compilation in the [Bill of Materials section](/bom/) of the site

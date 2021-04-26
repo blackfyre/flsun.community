@@ -95,8 +95,9 @@ module.exports = {
         text: "Forum",
         link: "https://github.com/blackfyre/flsun.community/discussions",
       },
-      { text: "Social Media", link: "/guide/social-media.html" },
+      { text: "Guide", link: "/guide/" },
       { text: "Firmware", link: "/guide/firmware.html" },
+      { text: "BOM", link: "/bom/" },
     ],
     sidebar: {
       "/guide/": [
@@ -120,7 +121,9 @@ module.exports = {
           collapsable: false,
           children: [
             "",
-            "qq-s"
+            "q5",
+            "qq-s",
+            "sr"
           ]
         }
       ]

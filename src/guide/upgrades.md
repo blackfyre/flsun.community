@@ -47,6 +47,14 @@ If you prefer the visual approach, there are youtube videos for this, such as <h
 - Extruder is LOUD!  
   Reduce the extruders max acceleration to 250mm/s<sup>2</sup>
 
+## Ease of access
+
+If you find yourself swapping hotends fairly regularly or just about any part in/on the effector cage it's reccommeded to install quick connectors for disconnecting the hotend & fans. A fairly quick & secure connector would be JST SM2.54.  
+
+::: tip
+Use only 2 pin connectors, for when you only need to replace 1 fan you won't have cut & crimp everything again.
+:::
+
 ## From bushings to bearings <Badge text="easy"/>
 
 The QQ-S uses graphite impregnated bronze bushings in the carriages, these can be optionally replaced with:
