@@ -28,11 +28,13 @@ This is a work in progress list, if you find something missing, or be incorrect,
 ## Effector
 
 - 1x Aluminium effector plate
-- 1x hotend mounting
+- 1x hotend mounting cage
 - 1x PTFE Tubing <Badge text="Have a spare"/>
   - Capricorn brand is recommended
-- 1x 40x40x20 fan <Badge text="Have a spare"/>
-- 2x 40x30x10 blower fan <Badge text="Have a spare"/>
+- 1x 40x40x20 (4020) fan <Badge text="Have a spare"/>
+- 2x 40x40x10 (4010) blower fan <Badge text="Have a spare"/>
+- 2x ABS(?) fan shrouds
+  - it's recommended to replace these with more "on point" ones, PETG is a suitable material
 
 ### Hotend
 
