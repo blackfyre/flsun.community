@@ -49,7 +49,7 @@ This is a work in progress list, if you find something missing, or be incorrect,
 - 1x 240W 24V PSU
 - 1x Electronics board
   - Can be multiple versions, and can be replaced with any board with sufficient capabilites, read more at [updgrade guide](/guide/upgrades.md#board-switch)
-- 1x ~2m 8 core cable with 20 AWG cores
+- 1x ~2m, UL2547(?) 8 core cable with 20 AWG cores
 - 1x ~2.2m 4 core ribbon cable with 20 AWG cores (for the stepper motors)
 - 1x 8 pin GX16 (aviation) connector
   - can be replaced with anything that fits into a 19mm hole and is secure enough
