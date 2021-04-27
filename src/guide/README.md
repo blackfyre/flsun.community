@@ -100,7 +100,7 @@ When printing at the edge of the bed, the effector sticks out past the frame.
 So if you put flat sides on you'll limit the print area.  
 You can use a design that provides a top and bottom for a piece of stiff but flexible material (there are several on Thingiverse).
 
-## Slicers:
+## Slicers
 
 ::: tip
 You should probably download the current version instead of using the provided one.
@@ -126,7 +126,7 @@ You should avoid asking for settings/profiles as each printer differs slightly a
 You should always fine tune your settings depending on the spool of filament you're working with!
 :::
 
-## Other software:
+## Other software
 
 - [Repetier Host](https://www.repetier.com/download-now/)
   - Use for printing from a computer or sending G-code. Includes slicers.
@@ -136,7 +136,7 @@ You should always fine tune your settings depending on the spool of filament you
 - [Octoprint](https://octoprint.org/) (on RPi)
   - Enables easy wifi printing, time lapses, remote management, sending G-code and features a really poweful plugin system. 
 
-## Details about the boards:
+## Details about the boards
 
 - MKS Robin Mini board: <https://github.com/makerbase-mks/MKS-Robin-mini>
 - MKS Robin Nano board: <https://github.com/makerbase-mks/MKS-Robin-Nano>
@@ -147,6 +147,12 @@ You should always fine tune your settings depending on the spool of filament you
     - one with soldered motor drivers,
     - one with driver sockets.
 
+### More details about TFT28, including button customization:
+
+- [English datasheet](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
+- [IMG2LCD software](https://github.com/makerbase-mks/Software/tree/master/Image2LCD)
+  (A similar procedure can be used to customize QQ-S/Q5 button appearance)
+
 ## G-Code descriptions
 
 - <https://reprap.org/wiki/G-code> (best one: describes all types incl. Repetier)
@@ -155,12 +161,6 @@ You should always fine tune your settings depending on the spool of filament you
 ## CAD Files
 
 - [Old QQ-S](https://grabcad.com/library/modded-flsun-qq-s-1)
-
-## More details about TFT28, including button customization:
-
-- [English datasheet](https://github.com/makerbase-mks/Datasheet/blob/master/English%20datasheet/MKS%20TFT28%2032%20DataSheet.pdf)
-- [IMG2LCD software](https://github.com/makerbase-mks/Software/tree/master/Image2LCD)
-  (A similar procedure can be used to customize QQ-S/Q5 button appearance)
 
 ## Bill of Materials
 
