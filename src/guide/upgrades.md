@@ -1,5 +1,12 @@
 # Upgrades
 
+When changing something on the printer, always do some research first and have a clear goal in mind.  
+There are several reasons you would want to change some characteristics of your printer like noise reduction, quick print relase, ability to print with more technical materials like nylon...
+
+::: tip
+Don't fix it if it isn't broke!
+:::
+
 ## PEI Coated Spring Steel build plate <Badge text="easy"/>
 
 If your glass coating breaks down, or just don't want to wait for the bed to cool down so you can grap your print, a PEI coated spring steel plate is easily the best upgrade you can get.  
@@ -7,6 +14,12 @@ There are a variety of available plates:
 
 - PEI coated on one side, bare steel on the other side
 - Smooth PEI coat on one side, rough textured on the other side
+
+### BOM (What you'll need)
+
+- 1x PEI coated spring steel plate
+- 1x bed plate sized fridge magnet, sticky on one side
+  - usually included with the plate
 
 ### Installation
 
@@ -23,6 +36,13 @@ As you're introducing a couple of new layers the bed temperature may need to be 
 
 ## Silent stepper drivers <Badge text="easy"/> <Badge text="cheap"/>
 
+### BOM (What you'll need)
+
+- 4x TMC2208 or TMC2209 stepper drivers
+- 1x electronics board with stepper driver sockets
+
+### Installation
+
 0.  Check if your board has sockets for the stepper drivers.
     - The QQ and Q5 should by default
     - The QQ-S, you need to have the version of the Hispeed board that has socketed drivers.
@@ -30,26 +50,27 @@ As you're introducing a couple of new layers the bed temperature may need to be 
 1.  Carefully install the new module(s) (TMC2208 or TMC2209).
 1.  You'll have to reverse the motor directions for the installed drivers.
 
-- This can be done in hardware (by reversing the wires as they plug into the driver)
-- or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file).
+    - This can be done in hardware (by reversing the wires as they plug into the driver)
+    - or in software (in the config.txt file, look for lines that say `INVERT_X_DIR` or `EXT0_INVERSE` and change the values, then reflash this file).
 
-4.  Finally, set the motor current by adjusting the trim pots on the driver boards.
+1.  Finally, set the motor current by adjusting the trim pots on the driver boards.
 
 If you prefer the visual approach, there are youtube videos for this, such as <https://www.youtube.com/watch?v=0EH_hUJRLag>
 
 ### Troubleshooting & FAQ
 
-- Can I enable UART mode for the TMC drivers?
+- **Can I enable UART mode for the TMC drivers?**  
   Yes, assuming you are using Marlin firmware and not using the wifi module. See <https://www.youtube.com/watch?v=7ShcFKXrVHo> for the Q5. QQ-S is similar.
-- It prints fine for the first few layers, then there's gaps: it's under extruding
-- I can't get the driver for the printer installed on my computer.
+- **It prints fine for the first few layers, then there's gaps**  
+  It's under extruding
+- **I can't get the driver for the printer installed on my computer**
   See: <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>
-- Extruder is LOUD!  
+- **Extruder is LOUD!**  
   Reduce the extruders max acceleration to 250mm/s<sup>2</sup>
 
 ## Ease of access
 
-If you find yourself swapping hotends fairly regularly or just about any part in/on the effector cage it's reccommeded to install quick connectors for disconnecting the hotend & fans. A fairly quick & secure connector would be JST SM2.54.  
+If you find yourself swapping hotends fairly regularly or just about any part in/on the effector cage it's reccommeded to install quick connectors for disconnecting the hotend & fans. A fairly quick & secure connector would be JST SM2.54.
 
 ::: tip
 Use only 2 pin connectors, for when you only need to replace 1 fan you won't have cut & crimp everything again.
