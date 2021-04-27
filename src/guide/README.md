@@ -58,10 +58,10 @@ The rest of the credit goes to the repository contributors, whom you can join an
 There are a couple of options here:
 
 - Setting up Repetier
-- Or use a RaspberryPi with Octoprint instead. It's better.
+- Or use a RaspberryPi with [Octoprint](https://octoprint.org/) instead. It's better.
   - No more SD card
   - GCODE console
-  - lots of usability improving pl
+  - lots of usability improving plugins
 
 ### Setting up repetier
 
@@ -92,33 +92,49 @@ _Courtesy of TK Ward_
 ## Maximum print speed?
 
 - Depends on many variables, but mostly the material and the model.
-- Folks have printed at up to 130mm/sec.
+- Folks have printed at up to 130mm/sec with PLA.
 
 ## What about an enclosure?
 
-- When printing at the edge of the bed, the effector sticks out past the frame.
-- So if you put flat sides on you'll limit the print area.
-- You can use a design that provides a top and bottom for a piece of stiff but flexible material (there are several on Thingiverse).
+When printing at the edge of the bed, the effector sticks out past the frame.  
+So if you put flat sides on you'll limit the print area.  
+You can use a design that provides a top and bottom for a piece of stiff but flexible material (there are several on Thingiverse).
 
-## Slicers, settings:
+## Slicers:
 
-- You should probably download the current version instead of using the provided one.
-- Cura (open source; available for PC, Mac, and Linux) <https://ultimaker.com/software/ultimaker-cura>
-- Some versions had very slow z movement; there's a fix for that:
-  - Set the maximum Z speed in the settings to a reasonable value.
-- Slic3r or Prusa Slicer (open source; for PC, Mac, and Linux) <https://slic3r.org> <https://www.prusa3d.com/prusaslicer/>
-- Some settings can be found in the files section
-- Simplify 3D (commercial; available for PC, Mac, and Linux) <https://www.simplify3d.com>
-- Some settings can be found in the files section
+::: tip
+You should probably download the current version instead of using the provided one.
+:::
+
+This list only highlights the most popular Slicer choices!
+
+- [Cura](https://ultimaker.com/software/ultimaker-cura) (open source; available for PC, Mac, and Linux)
+  - Has default profiles for Q5, QQ-S (Pro)
+  - Has default profiles for several different filaments
+  - Some versions had very slow z movement; there's a fix for that:
+    - Set the maximum Z speed in the settings to a reasonable value.
+- [PrusaSlicer](https://www.prusa3d.com/prusaslicer/) (open source; for PC, Mac, and Linux)
+  - Has default profiles for Q5, QQ-S (Pro)
+  - Has default profiles for several different filaments
+- [Simplify 3D](https://www.simplify3d.com) (commercial; available for PC, Mac, and Linux)
+
+::: warning
+You should avoid asking for settings/profiles as each printer differs slightly and require different settings!  
+:::
+
+::: tip
+You should always fine tune your settings depending on the spool of filament you're working with!
+:::
 
 ## Other software:
 
-- Repetier Host
-- Use for printing from a computer or sending G-code. Includes slicers. <https://www.repetier.com/download-now/>
-- Pronterface (PrintRun)
-- Use for testing the printer and sending G-code. <http://www.pronterface.com/#download>
-- Octoprint (on RPi)
-- Enables easy wifi printing, time lapses, other features. <https://octoprint.org/>
+- [Repetier Host](https://www.repetier.com/download-now/)
+  - Use for printing from a computer or sending G-code. Includes slicers.
+- [Pronterface](http://www.pronterface.com/#download) (PrintRun)
+  - Use for testing the printer and sending G-code.
+  - Is bundled with PrusaSlicer
+- [Octoprint](https://octoprint.org/) (on RPi)
+  - Enables easy wifi printing, time lapses, remote management, sending G-code and features a really poweful plugin system. 
 
 ## Details about the boards:
 
@@ -138,7 +154,7 @@ _Courtesy of TK Ward_
 
 ## CAD Files
 
-* [Old QQ-S](https://grabcad.com/library/modded-flsun-qq-s-1)
+- [Old QQ-S](https://grabcad.com/library/modded-flsun-qq-s-1)
 
 ## More details about TFT28, including button customization:
 

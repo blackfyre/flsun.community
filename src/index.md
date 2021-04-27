@@ -4,7 +4,7 @@ heroImage: /hero.png
 heroText: null
 heroAlt: FLSUN Community HUB BIG Logo
 tagline: Community knowledgebase for FLSUN 3D Printer owners
-actionText: Quick Start →
+actionText: Get Started →
 actionLink: /guide/
 features:
 - title: Maintenance
@@ -12,7 +12,7 @@ features:
 - title: Tutorials
   details: A whole new world can open up! Speed, quiet, multiple colors, ... you name it!
 - title: Social Media groups
-  details: Connect with others!
+  details: Connect with others and make friends!
 - title: Firmwares
   details: Custom solutions, for your custom needs!
 footer: Made by the FLSUN Community with ❤️
