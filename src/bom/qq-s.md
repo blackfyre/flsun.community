@@ -40,11 +40,20 @@ This is a work in progress list, if you find something missing, or be incorrect,
 
 - 1x XCR BP6 block <Badge text="Have a spare"/>
   - Can be replaced with V6 block
-- 1x MK8 nozzle <Badge text="Have a spare"/>
+- 1x MK8 0.4 brass nozzle <Badge text="Have a spare"/>
   - Can be replaced with V6 nozzle, but you'll need another fan shroud
 - 1x V6-clone heatsink & throat
 - 1x 40W 24V heat cartridge
 - 1x Bead thermistor
+- 1x PC4-M10 Pneumatic quick connector
+
+## Extruder
+- 1x E3D Titan clone
+- 1x L shaped metal bracket
+- 2x M4x10 bolt
+- 1x NEMA17 41mm Stepper motor
+  - NEMA17 is the profile
+  - 41mm is the length
 
 ## Electronics box
 
@@ -55,3 +64,4 @@ This is a work in progress list, if you find something missing, or be incorrect,
 - 1x ~2.2m 4 core ribbon cable with 20 AWG cores (for the stepper motors)
 - 1x 8 pin GX16 (aviation) connector
   - can be replaced with anything that fits into a 19mm hole and is secure enough
+- 3x NEMA17 41mm Stepper motor
