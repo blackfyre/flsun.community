@@ -62,3 +62,14 @@ Go to <https://marlinfw.org> or <https://github.com/MarlinFirmware>
 ### DeltaFoxIes
 
  * [https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares](https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares)
+
+### Klipper
+
+#### What is Klipper?
+Klipper is a 3D printer firmware that runs on a Raspberry Pi as opposed to the microcontroller of the printer. The advantage of this is that the complex inverse kinematic calculations of delta printers can be processed on the Raspberry Pi, which has way more computational horsepower compared to the 32-bit microcontroller in the printer. This way, all the microcontroller has to handle are the movement commands (ex. move stepper_a 10 steps) as well as heating commands (ex. heat extruder to 200 degrees). This results in a much smoother operation of the printer.
+
+Another advantage of Klipper is that you don't have to recompile and flash the firmware every time you change something in the configuration file, such as Marlin. You can even edit the configuration file on the web interface (more about this later) and hit a button to reset the printer and load the new configuration. This makes the tuning process much more efficient.
+
+#### How do I get it?
+
+You can follow this tutorial: [https://github.com/CobraPi/Klipper-Firmware-FLSUN-QQ-S-Pro](https://github.com/CobraPi/Klipper-Firmware-FLSUN-QQ-S-Pro)
