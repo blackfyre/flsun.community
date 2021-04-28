@@ -55,11 +55,12 @@ TBA
 Instructions for the custom firmwares are provided by the repositories, respectively.
 :::
 
-### QQ-S: There is a QQ-S config in the official Marlin source now.
+### Marlin
+#### Build your own
 Go to <https://marlinfw.org> or <https://github.com/MarlinFirmware>
 (This is for folks who will build it themselves.)
 
-### DeltaFoxIes
+#### DeltaFoxIes
 
  * [https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares](https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares)
 
