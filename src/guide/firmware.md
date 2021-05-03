@@ -67,9 +67,20 @@ Go to <https://marlinfw.org> or <https://github.com/MarlinFirmware>
 ### Klipper
 
 #### What is Klipper?
-Klipper is a 3D printer firmware that runs on a Raspberry Pi as opposed to the microcontroller of the printer. The advantage of this is that the complex inverse kinematic calculations of delta printers can be processed on the Raspberry Pi, which has way more computational horsepower compared to the 32-bit microcontroller in the printer. This way, all the microcontroller has to handle are the movement commands (ex. move stepper_a 10 steps) as well as heating commands (ex. heat extruder to 200 degrees). This results in a much smoother operation of the printer.
+Klipper is a 3D printer firmware that runs on a Raspberry Pi as opposed to the microcontroller of the printer.
+The advantage of this is that the complex inverse kinematic calculations of delta printers can be processed on the
+Raspberry Pi, which has way more computational horsepower compared to the 32-bit microcontroller in the printer.
+This way, all the microcontroller has to handle are the movement commands (ex. move stepper_a 10 steps) as well as heating commands (ex. heat extruder to 200 degrees). This results in a much smoother operation of the printer.
 
-Another advantage of Klipper is that you don't have to recompile and flash the firmware every time you change something in the configuration file, such as Marlin. You can even edit the configuration file on the web interface (more about this later) and hit a button to reset the printer and load the new configuration. This makes the tuning process much more efficient.
+Another advantage of Klipper is that you don't have to recompile and flash the printer firmware every time you change something in
+the configuration file like you do in Marlin. You can even edit the configuration file on the web interface and hit a button to reset the printer and instantly load the new configuration. This makes the tuning process much more efficient.
+
+It's also highly configurable. Here are some of the cool things you can do with it:
+
+- You can set it up to run multiple boards on a single printer (if you have a ton of steppers and/or extruders)
+- You can run multiple printers on one Raspberry Pi and control them all from a single web interface
+- You can set up a printer farm by running a ton of printers on a powerful Linux PC
+
 
 #### How do I get it?
 
