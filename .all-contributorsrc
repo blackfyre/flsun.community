@@ -32,6 +32,15 @@
         "tutorial",
         "userTesting"
       ]
+    },
+    {
+      "login": "CobraPi",
+      "name": "Joseph Orduna",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5215609?v=4",
+      "profile": "https://github.com/CobraPi",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7
