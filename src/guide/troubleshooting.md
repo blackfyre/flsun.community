@@ -139,3 +139,11 @@ CA glue works, but doesn't give enough time to align the parts.
   - one for chassis fan (mount it next to motor driver heatsinks)
 - The fans are 60x60x15, 12V (QQ) or 24V (QQ-S) (except for power supply fan: 12V)
 - You can consider the [Noctua mod](/guide/upgrades.md#noctua-fans)
+
+## Filament grinding away the extruder inlet (QQ-S)
+
+It's easy to fix this, and there are multiple solutions!
+
+- put a short PTFE tube into the inlet (yes, it even expects you to do so)
+- install a filament guide, there are multiple on thingiverse
+- install a filament detector (2-in-1 solution)
