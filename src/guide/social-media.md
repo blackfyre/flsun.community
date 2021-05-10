@@ -13,4 +13,4 @@ Since the dawn of time, communities have been popping up and it's no different f
 
 ## Discord
 
- * Join us at [https://discord.gg/QWFFDy4G]( https://discord.gg/QWFFDy4G)
+ * Join us at [https://discord.gg/665C8uFH](https://discord.gg/665C8uFH)
