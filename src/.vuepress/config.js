@@ -96,7 +96,8 @@ module.exports = {
         link: "https://github.com/blackfyre/flsun.community/discussions",
       },
       { text: "Guide", link: "/guide/" },
-      { text: "Firmware", link: "/guide/firmware.html" },
+      { text: "Firmware", link: "/guide/firmware.md" },
+      { text: "Mods", link: "/modifications/" },
       { text: "BOM", link: "/bom/" },
     ],
     sidebar: {
@@ -118,6 +119,18 @@ module.exports = {
       "/bom/": [
         {
           title: "BOM",
+          collapsable: false,
+          children: [
+            "",
+            "q5",
+            "qq-s",
+            "sr"
+          ]
+        }
+      ],
+      "/modifications/": [
+        {
+          title: "Mods",
           collapsable: false,
           children: [
             "",

@@ -1,7 +1,8 @@
 # Upgrades
 
 When changing something on the printer, always do some research first and have a clear goal in mind.  
-There are several reasons you would want to change some characteristics of your printer like noise reduction, quick print relase, ability to print with more technical materials like nylon...
+There are several reasons you would want to change some characteristics of your printer like noise reduction, quick print relase, ability to print with more technical materials like nylon...  
+If you're not interested in some measly improvements, but want to the abyss out of your printer, just head over to the [Mods section](/modifications/)
 
 ::: tip
 Don't fix it if it isn't broke!
@@ -41,7 +42,7 @@ As you're introducing a couple of new layers the bed temperature may need to be 
 
 ### BOM (What you'll need)
 
-- 4x TMC2208 or TMC2209 stepper drivers
+- 4x TMC2208 or TMC2209 <Badge text="recommended"/> stepper drivers
 - 1x electronics board with stepper driver sockets
 
 ### Installation
@@ -147,29 +148,6 @@ This incorporates a mounting point for a filament runount sensor as well.
 
 The mounting can be fount at <https://www.thingiverse.com/thing:4355343>  
 This allows the bowden tube to be less than 12" (30cm) long.
-
-## Board switch
-
-Ditching the factory board can have advantages like the handling more stepper drivers (for multiple extruders, ...) or add RGB LED controlling feature through a NeoPixel Bus interface or just and order of magnitude higher computational capacity (Delta style printers require a higher level of computational power than Cartesian style ones).
-
-::: tip
-Write up a list of what features you want and choose the board accordingly!
-:::
-
-::: danger
-If you proceed with this, you're doing this at your own risk. Your warranty is now void!
-:::
-
-### Duet 2 Wifi <Badge text="challenging"/>
-
-Duet boards are stable, highly capable and can be configured through gcodes, supports macros and a lot of handy features for 3D Printing.  
-A guide for gutting the QQ-S Pro can be found at [Medium](https://meki.medium.com/flsun-qq-s-and-duet-2-wifi-91b9c5419668)
-
-### BigTreeTech SKR Boards <Badge text="not so hard"/>
-
-BigTreeTech became popular with it's capable, (mostly) Marlin running cost effective boards. Each generation feautres fun things like NeoPixel support, well integrated TFT screens (as addons), proper fuses,... and the list could go on...
-
-Theres replacement demonstation over at [Youtube](https://www.youtube.com/watch?v=lo4q7uVZlwU&ab_channel=EEtransmit)
 
 ## Optical Endstops
 
