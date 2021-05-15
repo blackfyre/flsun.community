@@ -62,7 +62,8 @@ Go to <https://marlinfw.org> or <https://github.com/MarlinFirmware>
 
 #### DeltaFoxIes
 
- * [https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares](https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares)
+ * [Firmwares](https://github.com/Foxies-CSTL/Marlin_2.0.x/tree/FLSUN_QQS-PRO-MULTI/Marlin/Firmwares)
+ * [Wiki](https://github.com/Foxies-CSTL/Marlin_2.0.x/wiki)
 
 ### Klipper
 
