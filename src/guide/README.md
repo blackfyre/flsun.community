@@ -15,6 +15,9 @@ The rest of the credit goes to the repository contributors, whom you can join an
 - through reseller
   - [AliExpress](https://flsund3d.aliexpress.com/store/feedback-score/431393.html)
   - [Amazon](https://www.amazon.com/sp?marketplaceID=ATVPDKIKX0DER&seller=A8DKO6HP8H5CQ)
+  - [FLSUN North America](https://flsunnorthamerica.com/)
+  - [FLSUN Europe](https://flsun.eu/)
+    - Offers refurbished printers as well
 
 ## Initial setup
 
