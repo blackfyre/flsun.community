@@ -76,25 +76,24 @@ Try baud rates of 250000 (QQ) or 115200 (QQ-S/Q5).
 8. Send G-code: `M665 H<value>` [new H value]
 9. Send G-code: `G28` [Home again, to sync with new value]
 10. Send G-code: `G1 Z0` [Go to Z=0]  
-See if the paper moves easily, has slight friction, or is stuck tight,
-   then choose:
-     * Paper moves easily:
-       * Increase H value by 0.1
-       * Go back to step 7
-     * Paper has slight friction:
-       * Send G-code: `M500` [Save the new value]
-       * You're done! Celebrate!
-     * Paper is stuck tight:
-       * Decrease H value by 0.1
-       * Go back to step 7
+    See if the paper moves easily, has slight friction, or is stuck tight,
+    then choose:
+    _ Paper moves easily:
+    _ Increase H value by 0.1
+    _ Go back to step 7
+    _ Paper has slight friction:
+    _ Send G-code: `M500` [Save the new value]
+    _ You're done! Celebrate!
+    _ Paper is stuck tight:
+    _ Decrease H value by 0.1 \* Go back to step 7
 
 If you just want to tweak your Z=0 setting, follow these steps:
 
 1. Set up and run Pronterface in order to send the bold G-codes below.
 2. Read the current delta height using `M503` (for QQ) or `M205` (for QQ-S/Q5).
-   * For the QQ, look in the output for the `M665` line's "H" number.
-    * For the QQ-S, look in the output for "Z Max Length".  
-    The H (height) value should be a number around `370` for the QQ/QQ-S (210 Q5).
+   - For the QQ, look in the output for the `M665` line's "H" number.
+   - For the QQ-S, look in the output for "Z Max Length".  
+     The H (height) value should be a number around `370` for the QQ/QQ-S (210 Q5).
 3. Home the printer with `G28`
 4. Put a piece of paper on the printer bed.
 5. Bring the nozzle to Z0 with `G1 Z0 F3000`
@@ -132,3 +131,38 @@ There's also the manual option, thingieverse is loaded with these towers, bout y
 ### QQ-S (Pro)
 
 FLSUN made a really good video on how to tension the belts properly, check it out at [https://www.youtube.com/watch?v=N6FpQ8kDm-A](https://www.youtube.com/watch?v=N6FpQ8kDm-A)
+
+### Guitar tuning method (featured on the SR)
+
+Source: [Facebook post by Paul Hankin](https://www.facebook.com/groups/336951057403890/permalink/398154937950168)
+
+Before Proceeding make a note of your existing belt frequencies , refer to method below using app stated
+:::warning Disclaimer
+Iam in no way responsible for incorrect use of these instructions and undertaken at users own risk.
+:::
+Dont loosen middle screw of upper carriage or lower screws of lower carriage in this methodology
+Please ensure all screws have been checked for tightness before proceeding
+So when these printers are sent out , they are not tuned in to a perfect frequency , I have run some baseline tests around 60Hz +/- 2 hz
+When mine arrived they were 84hz, 54hz and 61Hz . No exacting science when assembled !!
+Im doing further tests for geometry and finish but so far 60hz is going to ok to start with. In the coming weeks i will do additional tests and post a graph of the results based on Frequency change v Quality and Accuracy.
+In the meantime....
+In a very quiet environment with no music , dogs barking , partners moaning. You get the picture...
+Method of Tuning as follows;
+
+1. Download "Pano Tuner" on the app store , i only have a IOS device but im sure Android have it to
+2. Loosen top bolts of belt tensioner 2 outer screws , just enough so the lower tensioner can move the upper roller slide assembly
+3. Open the app Pano Tuner
+4. Using the app point the devices microphone in front of the belt to tune. ( normally bottom of phone or tablet )
+5. Find the middle of the belt approx
+6. Pluck the right had belt like a guitar string and make note of the Hz reading in the smaller box
+7. Repeat until you have a consistent reading
+8. Using the lower adjustment wheel on the belt tensioner adjust until when you pluck the belt a reading of around 60 Hz is achieved
+9. Tighten the two screws you loosened earlier and check reading with app again , plucking once again the right hand belt , make adjustments as necessary ( Over tightening these screws can adjust the HZ so be aware ! )
+10. Repeat for all other 2 belts
+11. Using manual Move in Z direction on the SR UI , move the hotend up and down therefore using the newly tuned belts
+12. Press the XYZ Home position to finalise
+13. Recheck the Belt Frequency once again and Repeat previous steps until 60hz is maintained
+14. Relevel your bed with FLsun sensor provided
+15. Reset "Z" Zero position
+16. Press the XYZ Home position to finalise once again
+17. Voila !! all done and balanced
