@@ -143,7 +143,7 @@ G2 I0 J-110 X110 Y0 ; 1/4 circle wipe to prime the nozzle
 G1 Z5
  ```
 
-*gcode snippet by Nicolas Lopez*
+*gcode snippet by [Nicolas Lopez](https://www.facebook.com/groups/120961628750040/permalink/907461573433371/?comment_id=907569063422622)*
 
 ## Other software
 
