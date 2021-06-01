@@ -193,6 +193,7 @@ In general, we're talking about 2 options and variations on those themes:
 #### Direct Drive solutions:
 
 - [https://www.thingiverse.com/thing:4830145](https://www.thingiverse.com/thing:4830145)
+- [https://www.thingiverse.com/thing:4670132](https://www.thingiverse.com/thing:4670132)
 
 ## Filament sensor
 
