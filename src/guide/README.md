@@ -155,6 +155,15 @@ G1 Z5
 - [Octoprint](https://octoprint.org/) (on RPi)
   - Enables easy wifi printing, time lapses, remote management, sending G-code and features a really poweful plugin system. 
 
+## Give me Things to print!
+
+After the exahustive setup, you might want to print something useful (or not), but where to get the things?  
+Here are a couple of options for you:
+ - [Cults](https://cults3d.com)
+ - [MyMiniFactory](https://myminifactory.com) 
+ - [Thingieverse](https://thingieverse.com)
+ - [Thangs](https://thangs.com)
+
 ## Details about the boards
 
 - MKS Robin Mini board: <https://github.com/makerbase-mks/MKS-Robin-mini>
