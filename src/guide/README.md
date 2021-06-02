@@ -120,6 +120,14 @@ This list only highlights the most popular Slicer choices!
   - Has default profiles for Q5, QQ-S (Pro)
   - Has default profiles for several different filaments
 - [Simplify 3D](https://www.simplify3d.com) (commercial; available for PC, Mac, and Linux)
+- [SuperSlicer](https://github.com/supermerill/SuperSlicer) (open source; for Windows & Linux source)
+  - It's a customized/extended version of PrusaSlicer
+  - Doesn't include a profile for FLSUN Printers, you'll have set it up yourself!
+    - Not much to do, really... Just setup the bed size & max Z
+    - You can use the PrusaSlicer profiles for reference
+  - Has a couple advantages over Slic3r, PrusaSlicer on toolpath generation!
+- [Slic3r](https://slic3r.org/) (open source; available for PC, Mac, and Linux)
+  - The very slicer that's used as the foundation for PrusaSlicer, SuperSlicer, ...
 
 ::: warning
 You should avoid asking for settings/profiles as each printer differs slightly and require different settings!  
