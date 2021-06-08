@@ -17,18 +17,11 @@ By [Arno Zwaag](https://www.facebook.com/groups/120961628750040/permalink/922020
 ![Prime Line by Arno Zwaag](./prime-lines/198094872_988109138607776_6028542875103880710_n.jpg)
 
 ```gcode
-; FLSUN QQSP Custom Start G-code for Cura
-;{material_print_temperature} {material_bed_temperature}
+; FLSUN QQSP Custom Print Prime circle
 G21 ; set units to millimeters
 G90 ; Set all axes to absolute
 G28 ; Go to origin on all axes
 M82 ; Set E to Absolute Positioning
-M107 T0 ; Fan Off
-
-M117 Heating ; Update display
-M190 S{material_bed_temperature} ; heat bed and wait
-M109 S{material_print_temperature} T0 ; wait for nozzle to reach temp
-G92 E0 ; Zero extruder position
 M117 Purging ; Update display
 G00 X-1130 Y0 F3000
 G0 E3 F200 ;Prepare 
@@ -36,8 +29,7 @@ G02 I300 F3000.0 E50
 G03 I300 F3000.0 E50
 M117 Purge completed ; Update display
 G92 E0 ; Reset Extruder
-G1 X0 Y0 Z20 F9000 ;Ready to print
-
+G1 X0 Y0 Z20 F9000 ;Center the hotend, ready to print
 G92 E0 ;zero the extruded length
 M117 Printing ; Update display
 ```
