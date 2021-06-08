@@ -26,3 +26,34 @@ M117 Purge completed ; Update display
 G92 E0 ; Reset Extruder
 G92 E0 ;zero the extruded length
 ```
+
+The one in [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer/blob/master/resources/profiles/FLSun.ini#L777)
+```gcode
+; Prime line routine
+M117 "Printing prime line"
+G92 E0.0; reset extrusion distance
+G1 X-54.672 Y-95.203 Z0.3 F4000; go outside print area
+G92 E0.0; reset extrusion distance
+G1 E2 F1000 ; de-retract and push ooze
+G3 X38.904 Y-102.668 I54.672 J95.105 E20.999
+G3 X54.671 Y-95.203 I-38.815 J102.373 E5.45800
+G92 E0.0
+G1 E-5 F3000 ; retract 5mm
+G1 X52.931 Y-96.185 F1000 ; wipe
+G1 X50.985 Y-97.231 F1000 ; wipe
+G1 X49.018 Y-98.238 F1000 ; wipe
+G1 X0 Y-109.798 F1000
+G1 E4.8 F1500; de-retract
+G92 E0.0 ; reset extrusion distance
+```
+
+## Q5
+
+The one in [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer/blob/master/resources/profiles/FLSun.ini#L821)
+```gcode
+G92 E0
+G1 X-98 Y0 Z0.2 F4000 ; move to arc start
+G3 X0 Y-98 I98 Z0.2 E40 F400 ; lay arc stripe 90deg
+G0 Z1 
+G92 E0.0
+```
