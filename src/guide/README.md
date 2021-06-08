@@ -142,16 +142,7 @@ You should always fine tune your settings depending on the spool of filament you
 Properly priming the hotend for printing is beneficial to the print quality. Deltas have a bit tougher job than the usual square bedded counterparts, but there are a couple of options:
 
  - Print a skirt, 3 lines at least.
- - Print a purge line:  
- ```gcode
-G0 X110 Z5 F5000
-G1 Z0.3
-G3 I-110 J0 X0 Y110 E16 ; 1/4 circle wipe to prime the nozzle
-G2 I0 J-110 X110 Y0 ; 1/4 circle wipe to prime the nozzle
-G1 Z5
- ```
-
-*gcode snippet by [Nicolas Lopez](https://www.facebook.com/groups/120961628750040/permalink/907461573433371/?comment_id=907569063422622)*
+ - Print a [purge line](/guide/prime-line.md)
 
 ## Other software
 

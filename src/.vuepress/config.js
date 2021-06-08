@@ -113,6 +113,7 @@ module.exports = {
             "upgrades",
             "firmware",
             "social-media",
+            "prime-line"
           ],
         },
       ],

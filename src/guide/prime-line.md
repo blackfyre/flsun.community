@@ -1,0 +1,28 @@
+# Prime Line compilation
+
+## QQ-S
+
+By [Nicolas Lopez](https://www.facebook.com/groups/120961628750040/permalink/907461573433371/?comment_id=907569063422622)
+ ```gcode
+G0 X110 Z5 F5000
+G1 Z0.3
+G3 I-110 J0 X0 Y110 E16 ; 1/4 circle wipe to prime the nozzle
+G2 I0 J-110 X110 Y0 ; 1/4 circle wipe to prime the nozzle
+G1 Z5
+ ```
+  
+
+By [Aarno Zwaag](https://www.facebook.com/groups/120961628750040/permalink/922020695310792/)
+```gcode
+G92 E0 ; Zero extruder position
+M117 Purging ; Update display
+G1 X-130 Y0 Z0.0 F9000 ; Move to side of bed
+G00 Z0.0 F3000
+G00 X-1130 Y0 F1500
+G0 E3 F200 ;Prepare 
+G02 I300 F3000.0 E50
+G03 I300 F3000.0 E50
+M117 Purge completed ; Update display
+G92 E0 ; Reset Extruder
+G92 E0 ;zero the extruded length
+```
