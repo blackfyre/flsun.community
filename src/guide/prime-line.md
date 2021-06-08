@@ -13,6 +13,9 @@ G1 Z5
   
 
 By [Aarno Zwaag](https://www.facebook.com/groups/120961628750040/permalink/922020695310792/)
+
+![Prime Line by Aarno Zwaag](./prime-lines/198094872_988109138607776_6028542875103880710_n.jpg)
+
 ```gcode
 G92 E0 ; Zero extruder position
 M117 Purging ; Update display

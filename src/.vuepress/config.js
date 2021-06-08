@@ -99,6 +99,7 @@ module.exports = {
       { text: "Firmware", link: "/guide/firmware.md" },
       { text: "Mods", link: "/modifications/" },
       { text: "BOM", link: "/bom/" },
+      { text: "Specs", link: "/specs/" },
     ],
     sidebar: {
       "/guide/": [
@@ -138,6 +139,15 @@ module.exports = {
             "q5",
             "qq-s",
             "sr"
+          ]
+        }
+      ],
+      "/specs/": [
+        {
+          title: "Specs",
+          collapsable: false,
+          children: [
+            ""
           ]
         }
       ]
