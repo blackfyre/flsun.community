@@ -90,7 +90,7 @@ You can take a look at the corresponding [Duet Wiki](https://duet3d.dozuki.com/W
 ### Klipper
 These settings are tested and yield consistent results withinh tolerances.
 
-```
+```cfg
 # For the actual pin name, refer to your boards documentation
 [probe]
 pin: PC1 #YMMV
@@ -99,3 +99,11 @@ speed: 20
 samples: 2
 samples_tolerance_retries: 2
 ```
+
+## BL-Touch
+
+> The problem with bltouch and delta's is that the sensor has to be mounted on the side of the effector. that means 3 cm to the side of the nozzle. Now due to the way delta arms work, theres a slightly small tilt involved on the effector plate when moving to the edges from center. The tilt can be compensated by software, but not the tilt that happens when bltouch is mounted on the side of the nozzle. if on one side of the plate the tilt is 1mm, the other side will be negatively affected by -1 tilt totally 2mm difference.  
+This is why probes on delta needs to stay straight under the nozzle as the tilt is as small as possible.  
+There have been a few people that have done bltouch on their delta printer in this group successfully, but they also changed the delta rods, as its known to this group that the delta rods/arms are uneven length on QQ-S and Q5 series printers, that means there is a tilt on the effector. If you want to do this, dismantly your rods first, and measure them and ensure they are exactly same length. We have seen rod length vary as much as >1cm between the rods.
+
+_quoted from [Svein Johansen](https://www.facebook.com/groups/120961628750040/permalink/923069171872611/?comment_id=923084911871037)_
