@@ -7,6 +7,7 @@ Since the dawn of time, communities have been popping up and it's no different f
  * The largest & oldest group: [FLSUN QQ, QQ-S, Q5, and SR 3D Printer Owners](https://www.facebook.com/groups/120961628750040)
  * Finely curated FLSUN owner group: [Flsun Owners Group (Non Official)](https://www.facebook.com/groups/flsunowners/)
  * Official FLSUN SR group: [Flsun SR（SuperRacer）3D printer Official group](https://www.facebook.com/groups/336951057403890)
+ * Italian FLSUN community: [FLSUN ITALIA - Q5, QQ, QQ-S, QQ-S Pro](https://www.facebook.com/groups/338367227349367/)
 ## Reddit
 
  * Largest community on Reddit: [r/FLSUNDelta](https://www.reddit.com/r/FLSUNDelta/) 
