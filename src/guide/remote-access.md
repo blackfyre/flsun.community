@@ -27,7 +27,15 @@ Octoprint's robust plugin system allows you to remotely interact with your print
    - Automagically cancels the print in case of [Flying Spaghetti Monsters](https://en.wikipedia.org/wiki/Flying_Spaghetti_Monster)
 
 ## Remote access with Klipper
+ - [Moonraker Telegram](https://github.com/Raabi91/moonraker-telegram)
+   - supports both monitoring and control
+ - [VPN](remote-access.md#remote-access-through-vpn)
 
 ## Remote access with Duet Web Control
+ - [Duet Telegram](https://github.com/martinj/duet-telegram)
+   - supports both monitoring and control
+ - [VPN](remote-access.md#remote-access-through-vpn)
 
 ## Remote access through VPN
+ - [PiVPN](https://www.pivpn.io/)
+   - really easy to set up if you've got a raspberry pi on your home network
