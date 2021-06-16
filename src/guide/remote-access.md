@@ -1,4 +1,4 @@
-# Remotely access
+# Remote access
 
 Remotely accessing your printer is a boon when you want to monitor your printer and can't gaze at it 24/7... There are options!
 
