@@ -12,7 +12,7 @@ This is a work in progress list, if you find something missing, or be incorrect,
 - 3x ABS(?) rod mounting top
 - 12x M4x10 bolts
 - 6x 8mm rod
-- 3x GT2 6mm timing belt, ~148 cm long <Badge text="Have a spare"/>
+- 3x GT2 6mm timing belt, 1486 mm long <Badge text="Have a spare"/>
   - Gates brand is recommended
 - 3x 1m 2 core ribbon cable
 - 6x JST, 2 pin female connector
