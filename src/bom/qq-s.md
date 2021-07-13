@@ -57,7 +57,9 @@ This is a work in progress list, if you find something missing, or be incorrect,
 
 ## Electronics box
 
-- 1x 240W 24V PSU
+- 1x Cheng Liang P360W24V Power Supply
+  - Input: 115/230 VAC 50/60 Hz
+  - Output: +24V / 15A
 - 1x Electronics board
   - Can be multiple versions depending on the model being pro or not, and can be replaced with any board with sufficient capabilites, read more at [updgrade guide](/guide/upgrades.md#board-switch)
 - 1x ~2m, UL2547(?) 9 core cable with 20 AWG cores
