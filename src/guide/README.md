@@ -192,3 +192,7 @@ Here are a couple of options for you:
 ## Bill of Materials
 
 There's a BOM compilation in the [Bill of Materials section](/bom/) of the site
+
+## Material comparison
+
+There's a nice little comparison chart created by Three Dot Zero studios on the [learnbylayers.com](https://www.learnbylayers.com/wp-content/uploads/2018/06/ThreeDotZero-Filament-Comparison-LBL.pdf)
