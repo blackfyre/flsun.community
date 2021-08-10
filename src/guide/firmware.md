@@ -48,7 +48,7 @@ since they have not done this. Please ask them to publish the QQ-S source code!
  * [https://www.flsun3d.com/companyfile/1/](https://www.flsun3d.com/companyfile/1/)
 
 #### FLSUN SR
-TBA
+ * [https://www.flsun3d.com/companyfile/1/](https://www.flsun3d.com/companyfile/1/)
 ## Custom firmwares
 
 ::: tip
