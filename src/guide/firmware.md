@@ -85,4 +85,9 @@ It's also highly configurable. Here are some of the cool things you can do with 
 
 #### How do I get it?
 
+##### QQ-S (Pro)
 You can follow this tutorial: [https://github.com/CobraPi/Klipper-Firmware-FLSUN-QQ-S-Pro](https://github.com/CobraPi/Klipper-Firmware-FLSUN-QQ-S-Pro)
+
+##### SR
+
+3D Print Beginner made a tutorial on how to do it if you've got an MKS Nano v3 board: [https://3dprintbeginner.com/klipper-on-flsun-super-racer/](https://3dprintbeginner.com/klipper-on-flsun-super-racer/)
