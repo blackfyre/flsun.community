@@ -21,7 +21,7 @@ There are a variety of available plates:
 - 1x PEI coated spring steel plate:
   - Q5 <- looking for contributor info
   - QQ-S (Pro): 265 mm / 10.4 Inch in size
-  - SQ <- looking for contributor info
+  - SR: 265 mm / 10.4 Inch in size
 - 1x bed plate sized fridge magnet, sticky on one side
   - usually included with the plate
 
@@ -39,6 +39,8 @@ As you're introducing a couple of new layers the bed temperature may need to be 
 :::
 
 ## Silent stepper drivers <Badge text="easy"/> <Badge text="cheap"/>
+
+The SR already comes with silent stepper drivers (TMC2209), so you can just skip this section.
 
 ### BOM (What you'll need)
 
