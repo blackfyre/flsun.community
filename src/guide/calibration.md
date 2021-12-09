@@ -55,6 +55,21 @@ There are a couple of prints you can do to check if your printers geometry check
 - [Advanced Delta Printer Calibration](https://www.thingiverse.com/thing:745523)
 - [Delta Calibration & Validation Tool](https://www.thingiverse.com/thing:776346)
 
+### Geometry Correction For the QQ-S (Pro)
+
+FLSUN made a reasonably good job on forcing the correct geometry for the printer, but there are small things you can do to improve the accuracy.
+
+#### Correcting the rail positions
+
+Since there are 2 rails, they form a plane through the carriage and the angle of that plane should be perpendicular to the center of the print bed. Any minor misalignment can lead to the rails flexing, and loss of precision during the print. To mitigate this, you can follow the guide below:
+
+1. Dismount the effector arms from the carriages, so that the carriages can be moved freely aling the whole length of the rails.
+2. Loosen the rail clamping screws so the rails can be turned in their sockets.
+3. Move the carriage to the bottom position, where you can barely access the screws and tighten the rail clamping screws.
+4. Move the carriage to the top position, where you can barely access the screws and tighten the rail clamping screws.
+5. Repeat that steps for all the towers.
+6. Mount the effector arms back on the carriages.
+
 ## How to set the correct Z=0 height on the QQ or QQ-S:
 
 In the steps below, don't type the comment in []'s.
