@@ -26,7 +26,7 @@
     "vuepress": "^1.8.2",
     "vuepress-plugin-check-md": "^0.0.2",
     "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-plugin-flowchart": "^1.5.0",
     "vuepress-plugin-git-log": "^1.0.1",
     "vuepress-plugin-google-tag-manager": "^0.0.5",
     "vuepress-plugin-qrcode": "^1.0.7",
