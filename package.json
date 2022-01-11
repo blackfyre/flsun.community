@@ -30,7 +30,7 @@
     "vuepress-plugin-git-log": "^1.0.1",
     "vuepress-plugin-google-tag-manager": "^0.0.5",
     "vuepress-plugin-qrcode": "^1.0.7",
-    "vuepress-plugin-seo": "^0.1.4"
+    "vuepress-plugin-seo": "^0.2.0"
   },
   "dependencies": {
     "vuepress-plugin-robots": "^1.0.1",
