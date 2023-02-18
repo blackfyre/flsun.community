@@ -112,6 +112,6 @@ _quoted from [Svein Johansen](https://www.facebook.com/groups/120961628750040/pe
 
 The stock fan ducts are shit. Consiter alternitives.
 
-https://www.thingiverse.com/thing:4326601
-https://www.thingiverse.com/thing:4522727
-https://www.thingiverse.com/thing:3936815
+- https://www.thingiverse.com/thing:4326601
+- https://www.thingiverse.com/thing:4522727
+- https://www.thingiverse.com/thing:3936815
