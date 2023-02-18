@@ -107,3 +107,11 @@ This is why probes on delta needs to stay straight under the nozzle as the tilt 
 There have been a few people that have done bltouch on their delta printer in this group successfully, but they also changed the delta rods, as its known to this group that the delta rods/arms are uneven length on QQ-S and Q5 series printers, that means there is a tilt on the effector. If you want to do this, dismantly your rods first, and measure them and ensure they are exactly same length. We have seen rod length vary as much as >1cm between the rods.
 
 _quoted from [Svein Johansen](https://www.facebook.com/groups/120961628750040/permalink/923069171872611/?comment_id=923084911871037)_
+
+## Fan Ducts <Badge text="very simple"/>
+
+The stock fan ducts are shit. Consider alternitives.
+
+- https://www.thingiverse.com/thing:4326601
+- https://www.thingiverse.com/thing:4522727
+- https://www.thingiverse.com/thing:3936815
