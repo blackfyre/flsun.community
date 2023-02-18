@@ -110,7 +110,7 @@ _quoted from [Svein Johansen](https://www.facebook.com/groups/120961628750040/pe
 
 ## Fan Ducts <Badge text="very simple"/>
 
-The stock fan ducts are shit. Consiter alternitives.
+The stock fan ducts are shit. Consider alternitives.
 
 - https://www.thingiverse.com/thing:4326601
 - https://www.thingiverse.com/thing:4522727
